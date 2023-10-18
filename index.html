@@ -2,380 +2,546 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-	<link rel="stylesheet" type="text/css"
-		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-	<link rel="stylesheet" type="text/css"
-		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/fontawesome.min.css">
-	<link rel="stylesheet" type="text/css"
-		href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.css">
-	<link rel="stylesheet" href="home.css">
-	<title>JMD Group</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="./style.css" />
+  <title>About Us</title>
 </head>
 
 <body>
-	<header>
-		<h2 class="heading scroll-fade"><a style="font-size: 2rem;" href="index.html">JMD</a></h2>
 
-		<i class='bx bx-menu-alt-right' id="menu-icon"></i>
-		<nav class="navbar scroll-fade">
-			<a  href="index.html">Home</a>
-			<a  href="/JMD Construction Website/Our Work/Our Work/ourwork.html">Our Work</a>
-			<a 
-				href="/JMD Construction Website/JMD Services/JMD Services Final with add ons with my version version 4/services.html">Services</a>
-			<a  href="/JMD Construction Website/Aboutus/aboutus.html">About Us</a>
-			<a  href="contact.html">Contact Us</a>
-		</nav>
+  <header>
+    <h2 class="heading"><a style="font-size: 2rem;" href="#home.html">JMD</a></h2>
 
-	</header>
+    <i class='bx bx-menu-alt-right' id="menu-icon"></i>
+    <nav class="navbar">
+        <a href="home.html">Home</a>
+        <a href="#our-work">Our Work</a>
+        <a href="#services">Services</a>
+        <a href="Aboutus/aboutus.html">About Us</a>
+        <a href="#contact-us">Contact Us</a>
+    </nav>
 
-	<section class="hero" id="hero">
-		<div class="video-wrapper">
-			<video id="construction-video" src="pexels_videos_1388449 (1080p).mp4" autoplay loop muted></video>
+</header>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+
+}
+
+body {
+    overflow-x: hidden;
+   
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background-color: #ffffff; 
+}
+
+header .heading {
+    margin-left: 8rem;
+    color: #ffff;
+    font-size: 2.5rem;
+    font-family: 'Inika', serif;
+    
+}
+
+header .heading a {
+    text-decoration: none;
+    color: black;
+}
+
+header #menu-icon {
+    display: none;
+}
+
+header .navbar {
+    margin: 4rem;
+    transform: translateX(0%);
+}
+
+header .navbar a {
+    position: relative;
+    color: black;
+    list-style-type: none;
+    text-decoration: none;
+    /* padding-right: 2.2rem; */
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: 'Inika', serif;
+    font-weight: 500;
+    margin: 0px 10px;
+    padding: 10px 10px;
+}
+
+/* Pull down  */
+header .navbar a:before {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0px;
+    top: 0px;
+    content: '';
+    background: rgb(119, 119, 214);
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+header .navbar a:hover:before {
+    opacity: 0.3;
+    height: 100%;
+}
+
+@media (max-width:1280px) {
 
 
-			<div class="text-overlay drop-in">
-				<h3 class="auto-input titleb scroll-fade"></h3>
+header .heading {
+    margin-left: 2rem;
+}
 
-			</div>
+header #menu-icon {
+    display: block;
+    color: black;
+    font-size: 1.9rem;
+    float: right;
+    padding-right: 1.2rem;
+}
 
-	</section>
+header .navbar {
+    position: absolute;
+    /* display: flex;
+    flex-direction: column;
+    align-items:center; */
+    /* gap: -5rem; */
+    /* justify-content: flex-start; */
+    top: 0.35rem;
+    left: -8rem;
+    width: 100%;
+    padding: 1rem 0rem 0rem 0rem;
+    margin: 4rem 0rem 0rem 8rem;
+    background: rgba(197, 226, 225, 0.92);
+    /* display: none; */
+    transform: translateX(-100%);
+    transition: 0.5s ease;
+    z-index: 100;
+}
 
-	<div class="icon">
-		<div class="down-icon">
-			<a href="#welcome"><i class='bx bxs-chevrons-down'></i></a>
-		</div>
-	</div>
+header .navbar .active {
+    transform: translateX(0%);
+}
 
+header nav a {
+    display: block;
+    font-size: 1.2rem;
+    margin: 1rem 5%;
+}
 
-	<section class="welcomeig">
-		<div id="welcome" class="welcome scroll-fade">
-			<div class="txt">
-				<h2 class="scroll-fade" >Welcome to JMD Groups</h2>
-				<h5 class="scroll-fade" >Where creativity Meets Construction Excellence.
-					We are a versatile company Specialization in
-					Construction , Fabrication , Painting, Designing and Furnituring. With a passion for Innovation and a
-					commitment to quality, We transform ideas into Reality.
-					<h5>
-						<a href="#about-us">
-							<button>Read More<i class='bx bx-right-arrow-alt'></i></button>
-						</a>
-			</div>
-		</div>
-	</section>
+/* Pull down  */
+header .navbar a:before {
+   display: none;
+}
 
+header .navbar a:hover:before {
+  display: none;
+}
+}
 
-	<!-- START SECTION SERVICES -->
-	<section class="section-services">
-		<div class="container">
-			<div class="row justify-content-center text-center">
-				<div class="col-md-10 col-lg-8">
-					<div class="header-section">
-						<h2 class="title scroll-fade">Exclusive Services</h2>
-						<p class="description scroll-fade">Unveil a world of architectural wonders, expert contracting, stunning
-							interiors, robust structural engineering, electrical and plumbing solutions, and
-							transformative renovations.</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<!-- Single Service -->
-				<div class="col-md-6 col-lg-4">
-					<div class="single-service scroll-fade">
-						<div class="content scroll-fade">
-							<span class="icon">
-								<i class="fab fa-battle-net"></i>
-							</span>
-							<h3 class="title">Architectural Design</h3>
-							<p class="description">Creating detailed architectural plans and designs for new
-								construction or renovation projects. This service ensures that the building's layout and
-								aesthetics align with the client's vision and local building codes.</p>
-							<!-- <a href="#" class="learn-more">Learn More</a> -->
-						</div>
-						<span class="circle-before"></span>
-					</div>
-				</div>
-				<!-- / End Single Service -->
-				<!-- Single Service -->
-				<div class="col-md-6 col-lg-4">
-					<div class="single-service scroll-fade">
-						<div class="content scroll-fade">
-							<span class="icon">
-								<i class="fab fa-asymmetrik"></i>
-							</span>
-							<h3 class="title">General Contracting</h3>
-							<p class="description">Managing and overseeing the entire construction process, from initial
-								planning and permits to hiring subcontractors and ensuring the project is completed on
-								time and within budget.</p>
-							<!-- <a href="#" class="learn-more">Learn More</a> -->
-						</div>
-						<span class="circle-before"></span>
-					</div>
-				</div>
-				<!-- / End Single Service -->
-				<!-- Single Service -->
-				<div class="col-md-6 col-lg-4">
-					<div class="single-service scroll-fade">
-						<div class="content scroll-fade">
-							<span class="icon">
-								<i class="fab fa-artstation"></i>
-							</span>
-							<h3 class="title">Interior Design</h3>
-							<p class="description">Planning and designing the interior spaces of a building, including
-								choosing colors, materials, furnishings, and decor to create functional, aesthetically
-								pleasing environments..</p>
-							<!-- <a href="#" class="learn-more">Learn More</a> -->
-						</div>
-						<span class="circle-before"></span>
-					</div>
-				</div>
-				<!-- / End Single Service -->
-				<!-- Single Service -->
-				<div class="col-md-6 col-lg-4">
-					<div class="single-service scroll-fade">
-						<div class="content scroll-fade">
-							<span class="icon">
-								<i class="fab fa-500px"></i>
-							</span>
-							<h3 class="title">Structural Engineering</h3>
-							<p class="description">Our experts assess, design, and ensure the structural elements of
-								your project meet the highest standards of safety, stability, and code compliance. With
-								a keen eye for structural integrity, we build the foundation of your dreams.</p>
-							<!-- <a href="#" class="learn-more">Learn More</a> -->
-						</div>
-						<span class="circle-before"></span>
-					</div>
-				</div>
-				<!-- / End Single Service -->
-				<!-- Single Service -->
-				<div class="col-md-6 col-lg-4">
-					<div class="single-service scroll-fade">
-						<div class="content scroll-fade">
-							<span class="icon">
-								<i class="fas fa-chart-pie"></i>
-							</span>
-							<h3 class="title">Electrical and Plumbing Services</h3>
-							<p class="description">Installing electrical systems, lighting, and plumbing to ensure the
-								building's functionality and safety, including wiring, outlets, fixtures, and water
-								supply systems..</p>
-							<!-- <a href="#" class="learn-more">Learn More</a> -->
-						</div>
-						<span class="circle-before"></span>
-					</div>
-				</div>
-				<!-- / End Single Service -->
-				<!-- Single Service -->
-				<div class="col-md-6 col-lg-4">
-					<div class="single-service scroll-fade">
-						<div class="content scroll-fade">
-							<span class="icon">
-								<i class="fas fa-laptop-code "></i>
-							</span>
-							<h3 class="title">Renovation and Remodeling</h3>
-							<p class="description">Transforming existing spaces by making structural and cosmetic
-								changes, such as adding new rooms, upgrading kitchens or bathrooms, and modernizing
-								interiors to meet changing needs and preferences.</p>
-							<!-- <a href="#" class="learn-more">Learn More</a> -->
-						</div>
-						<span class="circle-before"></span>
-					</div>
-				</div>
-				<!-- / End Single Service -->
-			</div>
-			<div class="ser-link">
-				<a href="/JMD Construction Website/JMD Services/JMD Services Final with add ons with my version version 4/services.html"
-					class="learn-more scroll-fade">Learn More<i class='bx bx-right-arrow-alt'></i></a>
-			</div>
-		</div>
-	</section>
-
-	<!-- reveiw section -->
-
-	<section id="testim" class="testim">
-		<div class="testim-cover">
-			<div class="re-head scroll-fade">
-				<h2 class="re-title scroll-fade">See What Others Are Saying</h2>
-				<p>See what our valued clients have to say about their experiences with our services.</p>
-			</div>
-
-			<div class="wrap">
-
-				<span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
-				<span id="left-arrow" class="arrow left fa fa-chevron-left "></span>
-				<ul id="testim-dots" class="dots scroll-fade">
-					<li class="dot active"></li><!--
-						-->
-					<li class="dot"></li><!--
-						-->
-					<li class="dot"></li><!--
-						-->
-					<li class="dot"></li><!--
-						-->
-					<li class="dot"></li>
-				</ul>
-				<div id="testim-content" class="cont scroll-fade">
-
-					<div class="active">
-						<div class="img"><img
-								src="https://in.bmscdn.com/iedb/artist/images/website/poster/large/kartik-aaryan-1045198-08-12-2017-06-34-11.jpg"
-								alt=""></div>
-						<h2>Ms. Olivia P</h2>
-						<p>
-							"Their creative approach and meticulous attention to detail made my project shine. I'm
-							thrilled with the results. A top-notch service!"
-						</p>
-					</div>
-
-					<div>
-						<div class="img"><img
-								src="https://in.bmscdn.com/iedb/artist/images/website/poster/large/kartik-aaryan-1045198-08-12-2017-06-34-11.jpg"
-								alt=""></div>
-						<h2>Ms. Sophia K</h2>
-						<p>
-							"Outstanding service! They exceeded my expectations in every way. A great choice for anyone
-							seeking top-notch design and development."
-						</p>
-					</div>
-
-					<div>
-						<div class="img"><img
-								src="https://in.bmscdn.com/iedb/artist/images/website/poster/large/kartik-aaryan-1045198-08-12-2017-06-34-11.jpg"
-								alt=""></div>
-						<h2>Mr. Jacob L</h2>
-						<p>
-							"This team is highly reliable and consistently delivers on their promises. Great job, I
-							couldn't be more pleased with their service!"
-						</p>
-					</div>
-
-					<div>
-						<div class="img"><img
-								src="https://in.bmscdn.com/iedb/artist/images/website/poster/large/kartik-aaryan-1045198-08-12-2017-06-34-11.jpg"
-								alt=""></div>
-						<h2>Ms. Emily S</h2>
-						<p>
-							"Top-quality service with fantastic customer support. They've earned a solid 5-star rating
-							for their exceptional work and attention to detail."
-						</p>
-					</div>
-
-					<div>
-						<div class="img"><img
-								src="https://in.bmscdn.com/iedb/artist/images/website/poster/large/kartik-aaryan-1045198-08-12-2017-06-34-11.jpg"
-								alt=""></div>
-						<h2>Mr. Daniel M</h2>
-						<p>
-							"Impressive work by the team! They truly understood my vision and turned it into reality.
-							Highly recommended for their professionalism and creativity."
-						</p>
-					</div>
-
-				</div>
-
-			</div>
-		</div>
-	</section>
-
-	<!-- FeedForm -->
-	<section class="reviewform"></section>
-	<div class="content">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-md-10">
-					<div class="row align-items-center">
-						<div class="col-lg-4 ml-auto">
-							<h3 class="review-head mb-4 fs-1 scroll-fade">Let's talk about everything.</h3>
-							<p class="review-des scroll-fade">We value your opinions! Please take a moment to let us know about your experience with our services. Your reviews help us improve and provide the best solutions to our clients. Thank you for being part of our journey towards excellence.</p>
-							<p>
-						</div>	
-						<div class="border-left "></div>
-						<div class="col-lg-7 mb-5 mb-lg-0">
-							<h2 class="form-head mb-5 fw-lighter scroll-fade">Want To Write A Review<br> It's easy.</h2>
-							<form action="#"
-								class="" method="post" id="contactForm" name="contactForm">
-								<div class="row scroll-fade">
-									<div class="col-md-12 form-group">
-										<input type="text" class="form-control" name="fname" id="fname"
-											placeholder="Full Name" required>
-									</div>
-								</div>
-								<div class="row scroll-fade">
-									<div class="col-md-12 form-group">
-										<input type="text" class="form-control" name="email" id="email"
-											placeholder="Email" required>
-									</div>
-								</div>
-								<div class="row scroll-fade">
-									<div class="col-md-12 form-group">
-										<textarea class="form-control" name="message" id="message" cols="30" rows="7" required
-											placeholder="Write your reveiw"></textarea>
-									</div>
-								</div>
-								<div class="row scroll-fade">
-									<div class="col-md-12">
-										<input type="submit" value="Send Message"
-											class="btn btn-primary rounded-3 py-2 px-4">
-										<span class="submitting"></span>
-									</div>
-								</div>
-								<div id="successMessage" class="success-message"><img src="icons8-tick.gif">Review submitted successfully. Thank You!</div>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+@media (max-width:786px) {
 
 
 
+header nav a {
+    font-size: 1.1rem;
+    margin: 1rem 7%;
+}
+}
 
+@media (max-width:380px) {
 
-	<footer id="myFooter" class="footer ">
-		<div class="copyright footer-animate">
-			<p class="footer-animate">&copy; 2023 JMD GROUPS.</p>
-		</div>
+header nav a {
+    margin: 1rem 20%;
+}
+}
+</style>
 
-		<div class="links footer-animate ">
-			<div class="nav-bar">
-				<a class="footer-animate" href="index.html">Home</a>
-				<a class="footer-animate" href="#our-work">Our Work</a>
-				<a class="footer-animate" href="#services">Services</a>
-				<a class="footer-animate" href="/JMD Construction Website/Aboutus/aboutus.html">About Us</a>
-				<a class=".footer-animate" href="/JMD Construction Website/JMD Groups/JMD Groups/contact.html">Contact Us</a>
-			</div>
+   <body>
+      <div class="section-container">
+         <div class="columns image" style="background-image:url('./TsUK.gif')">
+            &nbsp;
+         </div>
+         <div class="columns content">
+            <div class="content-container">
+               <h5>About US</h5>
+               <p>
+                  Established in 1989, JMD Group has become a trusted and prominent real estate company in India. With more than four decades of experience and a successful track record of developing three million square feet of commercial and residential space, the Group has left an undeniable mark in the real estate industry.
 
-			<div class="another-link footer-animate">
-				<a class="footer-animate" href="">Terms of Service</a>
-				<a class="footer-animate" href="">Privacy Policy</a>
-			</div>
+JMD Group is committed to providing excellence in all asset categories, from designing innovative structures to delivering top-notch customer service at every point of contact. The Group has gratified both families and corporates alike with its landmarks of excellence, making it a go-to developer for those seeking quality and reliability.
 
-			<div class="social-media footer-animate">
-				<h5 class="footer-animate">Follow Us</h5>
-				<div class="so-icon">
-					<a class="footer-animate" href=""><i class='bx bxl-instagram'></i></a>
-					<a class="footer-animate" href=""><i class='bx bxl-facebook'></i></a>
-					<a class="footer-animate" href=""><i class='bx bxl-youtube'></i></a>
-				</div>
-			</div>
-		</div>
-	</footer>
+JMD Group has established itself as a renowned leader in the industry by prioritizing design innovation and operational excellence. This steadfast dedication has earned the Group a reputation for consistently delivering exceptional customer satisfaction. With JMD Group, you can have full confidence in partnering with a developer that unwaveringly upholds the highest standards of excellence, quality, and customer fulfilment.
+The JMD Group boasts an incomparable level of expertise in real estate investment, development, and management, accumulated over 33 years. Their track record of delivering exceptional service with a customer-centric focus in India is unparalleled.
+              </p>
+            </div>
+         </div>
+      </div>
+      <div class="section-container">
+         <div class="columns content">
+            <div class="content-container">
+               <h5>MEET THE FOUNDER</h5>
+              <p>
+               JMD Group owes its success to the visionary leadership of Mr. Sunil Bedi, the esteemed founder of the company. With a steadfast dedication spanning more than four decades, Mr. Bedi has consistently delivered exceptional real estate services while nurturing strong connections with clients, partners, and stakeholders. Guided by his leadership, JMD Group has accomplished remarkable milestones, including the development of over three million square feet of commercial and residential properties. This unwavering commitment to excellence has firmly established JMD Group as a renowned name within the industry.
 
-	<script src="https://use.fontawesome.com/1744f3f671.js"></script>
-	<script src="script.js"></script>
-	<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-	<script>
-		var typed = new Typed(".auto-input", {
-			strings: ["BUILDING A BETTER TOMORROW", "CREATING DREAMS INTO REALITY", "DESIGNING THE FUTURE TODAY"],
-			typeSpeed: 70,
-			backSpeed: 70,
-			loop: true,
-			showCursor: false
-		})
-	</script>
+Mr. Bedi's focus on creating exceptional spaces that inspire growth and prosperity for clients is reflected in every aspect of JMD's business operations. His deep understanding of the Indian real estate market and dedication to staying at the forefront of the industry have helped JMD identify promising investment opportunities and develop properties that meet the evolving needs of clients.
 
-</body>
+Beyond his work at JMD, Mr. Bedi is actively involved in various philanthropic initiatives aimed at improving the lives of underprivileged individuals and supporting education and healthcare in rural areas. His leadership has been instrumental in setting the standard for excellence in the Indian real estate industry. He continues to guide JMD towards new heights, providing exceptional services to clients and building lasting relationships with partners and stakeholders.
+              </p>
+            </div>
+         </div>
+         <div class="columns image" style="background-image:url('./founder.jpg')">
+            &nbsp;
+         </div>
+      </div>
+      <div class="section-container">
+         <div class="columns image" style="background-image:url('./ot2.jpg')">
+            &nbsp;
+         </div>
+         <div class="columns content">
+            <div class="content-container">
+               <h5>CO FOUNDER</h5>
+               <p>
+                  At JMD Group, we are committed to building a sustainable future for our clients and communities. We believe that sustainability is not just a responsibility but also an opportunity to create long-term value and have a positive impact on the environment and the people who use our buildings. That’s why we strive to integrate sustainable practises into every aspect of our work, from design to construction, to reduce our environmental footprint and enhance the well-being of our stakeholders. In our pursuit of excellence, we prioritize the utilization of sustainable materials, the implementation of energy-efficient systems, and the integration of green spaces in our architectural designs. Our close collaboration with clients enables us to develop tailored strategies for achieving their sustainability objectives. We provide expert consultation on sustainable building practices and materials, offering guidance on reducing energy consumption and waste. Through these collaborative efforts with clients and partners, we strive to contribute to a more sustainable future for generations to come.
+                  At JMD, we not only design exceptional architecture, we also provide comprehensive building solutions. Our experienced builders deliver high-quality craftsmanship and attention to detail in every project we undertake. With our seamless approach, we bring our visions to life with precision and care.
+                  At our company, we have a passion for creativity and acute attention to detail. We are dedicated to turning our clients' visions into reality through our functional, and visually appealing designs. 
+               </p>
+            </div>
+         </div>
+      </div>
+      <div class="our-team">
+    
+         <section id="team">
+           <h1>Our Team</h1>
+         <div class="card">
+         
+           <img src="./founder.jpg" alt="" />
+           <div class="data">
+             <h2>Mr.Sunil Bedi</h2>
+             <i style="font-weight: bold;">CHAIRMAN</i>
+             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+             <a href=""><i class='bx bxl-telegram' style="color: #0088cc;"></i></a>
+             <a href=""><i class='bx bxl-twitter' style='color:#00acee'></i></a>
+             <a href=""><i  class="bx bxl-linkedin" style="color: #0072b1;"></i></a>
+             <a href=""><i  class="bx bx-mail-send" style="color: #000000;"></i></a>
+             <a href=""><i  class="bx bxl-instagram" style="color: #e82372;"></i></a>
+           </div>
+         </div>
+         <div class="card">
+           <img src="./ot2.jpg" alt="" />
+           <div class="data">
+             <h2>Mr.Karan Bedi</h2>
+             <i style="font-weight: bold;">EXECUTIVE DIRECTOR</i>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+             <a href=""><i class='bx bxl-telegram' style="color: #0088cc;"></i></a>
+             <a href=""><i class='bx bxl-twitter' style='color:#00acee'></i></a>
+             <a href=""><i  class="bx bxl-linkedin" style="color: #0072b1;"></i></a>
+             <a href=""><i  class="bx bx-mail-send" style="color: #000000;"></i></a>
+             <a href=""><i  class="bx bxl-instagram" style="color: #e82372;"></i></a>
+             
+         
+           </div>
+         </div>
+         <div class="card">
+           <img src="./ot3.jpg" alt="" />
+           <div class="data">
+             <h2> Mr.Karam Bedi</h2>
+             <i style="font-weight: bold;">DIRECTOR OF BD</i>
+             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+             <a href=""><i class='bx bxl-telegram' style="color: #0088cc;"></i></a>
+             <a href=""><i class='bx bxl-twitter' style='color:#00acee'></i></a>
+             <a href=""><i  class="bx bxl-linkedin" style="color: #0072b1;"></i></a>
+             <a href=""><i  class="bx bx-mail-send" style="color: #000000;"></i></a>
+             <a href=""><i  class="bx bxl-instagram" style="color: #e82372;"></i></a>
+         
+           </div>
+         </div>
+         
+         
+         </section>
+         </div>
 
-</html>
+         <div class="slideshow-container">
+
+            <div class="mySlides ">
+              <div class="container">
+               
+                <img src="./sb.gif" alt="" style="width:75%;">
+                <div class="centered">
+                  <h2>Our Mission</h2>
+                  <p> To provide continuous value through our products that will add verve to our customers’ life by making goods that are innovative, qualitatively par excellence and  capable of providing an amazing level of customer satisfaction. Helping our customers get more out of life!
+                   </p>
+                 </div>
+      </div> 
+            </div>
+            
+            <div class="mySlides">
+              <div class="container">
+               
+                <img src="./sb3.gif" alt="" style="width:75%;">
+                <div class="centered">
+                  <h2>Our Vision</h2>
+                  <p> We keep our vision targeted at our mission and work with great passion in achieving our prime objective of giving the customer more of life! To achieve our aim,  we are dedicated to continuously innovating in technological inputs, service levels, creative
+                   </p>
+                 </div>
+      </div> 
+             
+            </div>
+            
+            <div class="mySlides">
+              <div class="container">
+               
+                <img src="./sb5.gif" alt="" style="width:75%;">
+                <div class="centered">
+                  <h2>Our History</h2>
+                  <p>  The JMD Group boasts an incomparable level of expertise in real estate investment, development, and management, accumulated over 33 years. Their track record of delivering exceptional service with a customer-centric focus in India is unparallele
+                   </p>
+                 </div>
+      </div> 
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            </div>
+            
+            <div class="dot-container">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+    
+    
+    
+         
+    
+          
+              
+         
+                 <style>
+                   footer {
+                       display: flex;
+                       justify-content: center;
+                       align-items: center;
+                       height: 35vh;
+                       border-radius: 2rem 2rem 0 0;
+                       /* background: rgba(30, 30, 30, 0.92); */
+                       background-color: black;
+                       color: #ffffff;
+                       gap: 30vw;
+                       font-size: 1.7rem;
+                       font-family: 'Inika', serif;
+                   }
+               
+                   footer .copyright {
+                       display: flex;
+                       /* justify-content: flex-start; */
+                   }
+               
+                   footer .links {
+                       display: flex;
+                       justify-content: space-between;
+                       align-items: center;
+                       gap: 10rem;
+                   }
+               
+                   footer .links .nav-bar {
+                       display: flex;
+                       flex-direction: column;
+                       align-items: flex-start;
+                       line-height: 2rem;
+                   }
+               
+                   footer .links .nav-bar a {
+                       color: #FFF;
+                       text-decoration: none;
+                       font-size: 1.3rem;
+                   }
+               
+                   footer .links .nav-bar a:hover {
+                       animation: pulse 0.5s;
+                       color: rgb(86, 177, 187);
+                   }
+               
+                   footer .links .another-link {
+                       display: flex;
+                       flex-direction: column;
+                       align-items: flex-start;
+                       line-height: 2rem;
+                   }
+               
+                   footer .links .another-link a {
+                       color: #FFF;
+                       text-decoration: none;
+                       font-size: 1.3rem;
+                   }
+               
+                   footer .links .another-link a:hover {
+                       animation: pulse 0.5s;
+                       color: rgb(86, 177, 187);
+                   }
+               
+                   footer .links .social-media {
+                       line-height: 2rem;
+                   }
+               
+                   footer .links .social-media h5,
+                   a {
+                       font-size: 1.5rem;
+                   }
+               
+                   footer .links .social-media {
+                       display: flex;
+                       flex-direction: column;
+                   }
+               
+                   footer .links .social-media a {
+                       display: inline-block;
+                       font-size: 2rem;
+                       color: white;
+               
+                   }
+               
+                   footer .links .social-media a:hover {
+                       animation: pulse 0.5s;
+                       color: rgb(86, 177, 187);
+                   }
+               
+                   @keyframes pulse {
+               
+                       0%,
+                       100% {
+                           transform: translate(0);
+                       }
+               
+                       50% {
+                           transform: translate(-0.1rem, -0.25rem);
+                       }
+                   }
+               
+                   @media (max-width:1280px) {
+                       footer {
+                           display: flex;
+                           flex-direction: column;
+                           justify-content: center;
+                           align-items: center;
+                           height: 50vh;
+                           gap: 10vh;
+                           font-size: 1.4rem;
+                       }
+                   }
+               
+                   @media (max-width:786px) {
+                       footer {
+                           display: flex;
+                           flex-direction: column;
+                           justify-content: center;
+                           align-items: center;
+                           height: 80vh;
+                           font-size: 1.3rem;
+                       }
+               
+                       footer .links {
+                           display: flex;
+                           flex-direction: column;
+                           float: left;
+                           gap: 5vh;
+                       }
+               
+                       footer .links .nav-bar {
+                           display: flex;
+                           justify-content: center;
+                           align-items: center;
+                       }
+               
+               
+                       footer .links .another-link {
+                           display: flex;
+                           align-items: center;
+                           justify-content: center;
+                       }
+               
+                       footer .links .social-media {
+                           display: flex;
+                           flex-direction: column;
+                           align-items: center;
+                           justify-content: center;
+                           gap: 0.2rem;
+                       }
+               
+                       footer .links .social-media a {
+                           font-size: 2rem;
+                       }
+                   }
+               </style>
+               
+               
+               
+               
+               
+               
+               <footer>
+                   <div class="copyright">
+                       <p>&copy; 2023 JMD GROUPS.</p>
+                   </div>
+               
+                   <div class="links">
+                       <div class="nav-bar">
+                           <a href="#hero">Home</a>
+                           <a href="#our-work">Our Work</a>
+                           <a href="#services">Services</a>
+                           <a href="#about-us">About Us</a>
+                           <a href="#contact-us">Contact Us</a>
+                       </div>
+               
+                       <div class="another-link">
+                           <a href="">Terms of Service</a>
+                           <a href="">Privacy Policy</a>
+                       </div>
+               
+                       <div class="social-media">
+                           <h5>Follow Us</h5>
+                           <div class="so-icon">
+                               <a href=""><i class='bx bxl-instagram'></i></a>
+                               <a href=""><i class='bx bxl-facebook'></i></a>
+                               <a href=""><i class='bx bxl-youtube'></i></a>
+                           </div>
+                       </div>
+                   </div>
+               </footer>
+               <script src="./aboutus.js"></script>
+         
+         
+         
+         
+         
+         </body>
+         
+         
+         </html>
+ 
