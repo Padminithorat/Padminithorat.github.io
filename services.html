@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JMD Services</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="fonts/icomoon/style.css" />
+    <link rel="stylesheet" href="services-style.css" />
+  </head>
+  <body>
+    <header>
+      <h2 class="heading">
+        <a style="font-size: 2rem" href="#home.html">JMD</a>
+      </h2>
+
+      <i class="bx bx-menu-alt-right" id="menu-icon"></i>
+      <nav class="navbar">
+        <a href="home.html">Home</a>
+        <a href="OurWork.html">Our Work</a>
+        <a href="services.html">Services</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+    </header>
+
+    <script>
+      let menuicon = document.getElementById("menu-icon");
+      let nav = document.querySelector(".navbar");
+
+      menuicon.addEventListener("click", () => {
+        menuicon.classList.toggle("bx-x");
+        if (nav.style.transform === "translateX(0%)") {
+          nav.style.transform = "translateX(-100%)";
+        } else {
+          nav.style.transform = "translateX(0%)";
+        }
+      });
+    </script>
+
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-ride="carousel"
+      data-interval="4000"
+    />
+    <div id="carousel-example-generic" class="carousel slide">
+      <!-- Indicators -->
+      <div class="carousel-indicators carousel-indicators-numbers">
+        <button
+          data-target="#carousel-example-generic"
+          data-slide-to="0"
+          data-bs-slide="0"
+          class="active btn btn-outline-primary btn1"
+        >
+          Crafting Spaces
+        </button>
+        <button
+          data-target="#carousel-example-generic"
+          data-slide-to="1"
+          data-bs-slide="1"
+          class="btn btn-outline-primary btn2"
+        >
+          Enhancing Interiors
+        </button>
+        <button
+          data-target="#carousel-example-generic"
+          data-slide-to="2"
+          data-bs-slide="2"
+          class="btn btn-outline-primary btn3"
+        >
+          Digital Solutions
+        </button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="grad">
+            <div class="carouselSlideDetails">
+              <h3 class="JMDGroup">JMD GROUP AND COMPANY</h3>
+              <div class="SlideHeading">
+                Building Dreams, Crafting Realities
+              </div>
+              <h2 class="SlideDetails">
+                Crafting homes and businesses with precision and expertise
+              </h2>
+            </div>
+
+            <div class="cards">
+              <div class="card card1">
+                <img
+                  src="https://images.pexels.com/photos/2347102/pexels-photo-2347102.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Building for the Future</h5>
+                  <p class="card-text">
+                    Creating appealing residential and commercial structures
+                    with precision.
+                  </p>
+                  <a href="#" class="btn btn-primary">Continue</a>
+                </div>
+              </div>
+
+              <div class="card card2">
+                <img
+                  src="https://images.pexels.com/photos/1722183/pexels-photo-1722183.jpeg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Safe Home Construction</h5>
+                  <p class="card-text">
+                    We specialize in building dream homes with quality and
+                    safety construction techniques.
+                  </p>
+                  <a href="#" class="btn btn-primary">Continue</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="grad">
+            <div class="carouselSlideDetails">
+              <h3 class="JMDGroup">JMD GROUP AND COMPANY</h3>
+              <div class="SlideHeading">
+                Designing Elegance, Enriching Comfort
+              </div>
+              <h2 class="SlideDetails">
+                Meticulous attention to detail, delivering interior excellence
+                and utmost comfort with precision.
+              </h2>
+            </div>
+
+            <div class="cards">
+              <div class="card card1">
+                <img
+                  src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aG9tZSUyMGludGVyaW9yJTIwZGVzaWdufGVufDB8fDB8fHww&w=1000&q=80"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Designing Elegance</h5>
+                  <p class="card-text">
+                    Crafting stylish, comfortable interiors with attention to
+                    furniture and flooring.
+                  </p>
+                  <a href="#" class="btn btn-primary">Continue</a>
+                </div>
+              </div>
+
+              <div class="card card2">
+                <img
+                  src="https://images.pexels.com/photos/5570224/pexels-photo-5570224.jpeg?cs=srgb&dl=pexels-jonathan-borba-5570224.jpg&fm=jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Furnishing with Excellence</h5>
+                  <p class="card-text">
+                    Delivering high-quality furnishing for aesthetically
+                    pleasing and functional spaces.
+                  </p>
+                  <a href="#" class="btn btn-primary">Continue</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="grad">
+            <div class="carouselSlideDetails">
+              <h3 class="JMDGroup">JMD GROUP AND COMPANY</h3>
+              <div class="SlideHeading">Innovating for a Digital World</div>
+              <h2 class="SlideDetails">
+                Your partner in pioneering digital solutions and achieving
+                technological excellence
+              </h2>
+            </div>
+
+            <div class="cards">
+              <div class="card card1">
+                <img
+                  src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHdlYiUyMGRldmVsb3BtZW50fGVufDB8fDB8fHww&w=1000&q=80"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Tech-Powered Solutions</h5>
+                  <p class="card-text">
+                    Expert web and software development to boost online presence
+                    and drive business growth.
+                  </p>
+                  <a href="#" class="btn btn-primary">Continue</a>
+                </div>
+              </div>
+
+              <div class="card card2">
+                <img
+                  src="https://images.unsplash.com/photo-1597239450996-ea7c2c564412?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c29mdHdhcmUlMjBlbmdpbmVlcnxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Digital Innovation</h5>
+                  <p class="card-text">
+                    Digital solutions foster innovation, helping businesses
+                    thrive in the digital age.
+                  </p>
+                  <a href="#" class="btn btn-primary">Continue</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a
+        class="left carousel-control carousel-control-prev"
+        href="#carousel-example-generic"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </a>
+      <a
+        class="right carousel-control carousel-control-next"
+        href="#carousel-example-generic"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </a>
+    </div>
+
+    <img_Galary>
+      <section class="portfolio-section" id="portfolio">
+        <div class="container-fluid">
+          <div class="portfolio-menu mt-2 mb-4">
+            <div class="controls">
+              <button class="btn btn-primary btn4" data-filter="all">
+                All
+              </button>
+              <button class="btn btn-primary btn4" data-filter=".web">
+                Building Services
+              </button>
+              <button class="btn btn-primary btn4" data-filter=".dev">
+                Interior Design
+              </button>
+              <button class="btn btn-primary btn4" data-filter=".wp">
+                Tech Solutions
+              </button>
+            </div>
+          </div>
+
+          <ul class="row portfolio-item">
+            <li class="mix dev col-xl-3 col-md-4 col-12 col-sm-6 pd">
+              <img
+                src="./services-Images/interior1.jpg"
+                id="galary_img"
+                itemprop="thumbnail"
+                alt="Image description"
+              />
+            </li>
+            <li class="mix web col-xl-3 col-md-4 col-12 col-sm-6 pd">
+              <img
+                src="./services-Images/Home2.avif"
+                id="galary_img"
+                itemprop="thumbnail"
+                alt="Image description"
+              />
+            </li>
+            <li class="mix wp col-xl-3 col-md-4 col-12 col-sm-6 pd">
+              <img
+                src="./services-Images/web1.jpg"
+                id="galary_img"
+                itemprop="thumbnail"
+                alt="Image description"
+              />
+            </li>
+            <li class="mix dev col-xl-3 col-md-4 col-12 col-sm-6 pd">
+              <img
+                src="./services-Images/interior2.jpg"
+                id="galary_img"
+                itemprop="thumbnail"
+                alt="Image description"
+              />
+            </li>
+            <li class="mix web col-xl-3 col-md-4 col-12 col-sm-6 pd">
+              <img
+                src="./services-Images/Home3.avif"
+                id="galary_img"
+                itemprop="thumbnail"
+                alt="Image description"
+              />
+            </li>
+            <li class="mix wp col-xl-3 col-md-4 col-12 col-sm-6 pd">
+              <img
+                src="./services-Images/web2.jpg"
+                id="galary_img"
+                itemprop="thumbnail"
+                alt="Image description"
+              />
+            </li>
+            <li class="mix dev col-xl-3 col-md-4 col-12 col-sm-6 pd">
+              <img
+                src="./services-Images/interior3.jpg"
+                id="galary_img"
+                itemprop="thumbnail"
+                alt="Image description"
+              />
+            </li>
+            <li class="mix web col-xl-3 col-md-4 col-12 col-sm-6 pd">
+              <img
+                src="./services-Images/Home1.avif"
+                id="galary_img"
+                itemprop="thumbnail"
+                alt="Image description"
+              />
+            </li>
+            <li class="mix wp col-xl-3 col-md-4 col-12 col-sm-6 pd">
+              <img
+                src="./services-Images/web3.avif"
+                id="galary_img2"
+                itemprop="thumbnail"
+                alt="Image description"
+              />
+            </li>
+            <li class="mix dev col-xl-3 col-md-4 col-12 col-sm-6 pd">
+              <img
+                src="./services-Images/interior4.jpg"
+                id="galary_img2"
+                itemprop="thumbnail"
+                alt="Image description"
+              />
+            </li>
+            <li class="mix web col-xl-3 col-md-4 col-12 col-sm-6 pd">
+              <img
+                src="./services-Images/Home4.avif"
+                id="galary_img2"
+                itemprop="thumbnail"
+                alt="Image description"
+              />
+            </li>
+            <li class="mix wp col-xl-3 col-md-4 col-12 col-sm-6 pd">
+              <img
+                src="./services-Images/web4.webp"
+                id="galary_img1"
+                itemprop="thumbnail"
+                alt="Image description"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- JS Links -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"
+      ></script>
+      <!-- Mixitup -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.2.2/mixitup.min.js"></script>
+      <!-- fancybox -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script>
+      <!-- Fancybox js -->
+      <script>
+        /*Downloaded from https://www.codeseek.co/ezra_siton/mixitup-fancybox3-JydYqm */
+        // 1. querySelector
+        var containerEl = document.querySelector(".portfolio-item");
+        // 2. Passing the configuration object inline
+        //https://www.kunkalabs.com/mixitup/docs/configuration-object/
+        var mixer = mixitup(containerEl, {
+          animation: {
+            effects: "fade translateZ(-100px)",
+            effectsIn: "fade translateY(-100%)",
+            easing: "cubic-bezier(0.645, 0.045, 0.355, 1)",
+          },
+        });
+        // fancybox insilaze & options //
+        $("[data-fancybox]").fancybox({
+          loop: true,
+          hash: true,
+          transitionEffect: "slide",
+          /* zoom VS next////////////////////
+          clickContent - i modify the deafult - now when you click on the image you go to the next image - i more like this approach than zoom on desktop (This idea was in the classic/first lightbox) */
+          clickContent: function (current, event) {
+            return current.type === "image" ? "next" : false;
+          },
+        });
+      </script>
+    </img_Galary>
+
+    <div class="hero">
+      <h1>
+        The mother art is architecture. Without an architecture of our own, we
+        have no soul of our own civilization.
+      </h1>
+      <div class="boxes">
+        <div class="box">
+          <img class="boxImg" src="./servies-Images/person_image.png" alt="" />
+          <p>
+            JMD Group stands out as a comprehensive solution for construction,
+            interior design, and web/software services. In our construction
+            project, their professionalism and problem-solving skills ensured a
+            smooth process. Their interior design team's creativity and
+            attention to detail transformed our space, exceeding our
+            expectations. With their web/software services, they delivered a
+            functional, aesthetically pleasing website that enhanced our online
+            presence significantly.
+          </p>
+        </div>
+        <div class="box">
+          <img class="boxImg" src="./servies-Images/person_image.png" alt="" />
+          <p>
+            Our experience with JMD Group's construction services was
+            exceptional. Their team demonstrated professionalism, delivered
+            high-quality work, and maintained transparent communication
+            throughout the project. They met deadlines and adhered to the
+            budget, and their ability to handle unexpected challenges was
+            impressive. We highly recommend JMD Group for construction services,
+            as their expertise and commitment to excellence shine through.
+          </p>
+        </div>
+        <div class="box">
+          <img class="boxImg" src="./servies-Images/person_image.png" alt="" />
+          <p>
+            JMD Group exceeded our expectations in both interior design and
+            web/software services. Their interior design team brought our vision
+            to life with creativity and precision. For web and software
+            services, they created a user-friendly website that enhanced our
+            online presence. JMD Group's versatility and client-focused approach
+            make them a top choice for these services. We highly recommend JMD
+            Group for their exceptional work in both design and tech.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="copyright">
+        <p>&copy; 2023 JMD GROUPS.</p>
+      </div>
+
+      <div class="links">
+        <div class="nav-bar">
+          <a href="index.html">Home</a>
+          <a href="OurWork.html">Our Work</a>
+          <a href="services.html">Services</a>
+          <a href="aboutus.html">About Us</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+
+        <div class="another-link">
+          <a href="">Terms of Service</a>
+          <a href="">Privacy Policy</a>
+        </div>
+
+        <div class="social-media">
+          <h5>Follow Us</h5>
+          <div class="so-icon">
+            <a href=""><i class="bx bxl-instagram"></i></a>
+            <a href=""><i class="bx bxl-facebook"></i></a>
+            <a href=""><i class="bx bxl-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
