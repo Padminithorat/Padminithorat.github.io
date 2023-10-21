@@ -17,7 +17,13 @@ body{
 --bs-gutter-x: 1.5rem;
 --bs-gutter-y: 0;
 display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
 flex-direction: row;
+flex-wrap: wrap;
+gap: 1.3rem;
+
 
 }
 .section-container .columns
@@ -34,30 +40,29 @@ width:50%;
 }
 .section-container .columns.image 
 {
-
+  
   background-repeat:no-repeat;
   background-size:cover;
   overflow: hidden;
   width: 34em;
   height: 24em;
-  margin-top: 7em;
+/*  margin-top: 7em;
   margin-left: 5em;
-  margin-right: 2em;
+  margin-right: 2em;*/
   border-radius: 15px 50px;
 
 }
 
 .section-container .row.image 
 {
-
+background-position: center;
   background-repeat:no-repeat;
   background-size:cover;
   overflow-x: hidden;
   width: 34em;
   height: 24em;
   margin-top: 5em;
-  margin-left: 2em;
-  margin-right: 8em;
+ 
   border-radius: 15px 50px;
 }
 
@@ -66,13 +71,10 @@ width:50%;
 {
 padding:40px 50px;
 margin-top: 5%;
-margin-left: 9%;
 }
 .section-container .columns.content .content-container.right
 {
 padding:34px 4px;
-margin-left: 5%;
-margin-right: 5%;
 margin-top: 5%;
 }
 .section-container .columns.content .content-container h5
@@ -132,10 +134,12 @@ text-align: center;
     margin-right:0;
   }
   .card img {
+    background-position: center;
+    background-size: cover;
     width:90%;
     min-height:90%;
     transition:all 0.9s;
-    margin-left: 15%;
+    margin: 4%;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     
   }
@@ -253,7 +257,7 @@ text-align: center;
   top: 50%;
   width: auto;
   margin-top: -30px;
-  margin-right: 76px;
+  margin-right: 45px;
   
   color: #888;
   font-weight: bold;
@@ -365,20 +369,19 @@ text-align: center;
     .section-container .columns.content .content-container
     {
     padding:45px 1px;
-    /*margin-right: 23%;*/
-    margin-top: 5%;
+    
     }
     
     .section-container .columns.image {
       
       margin-top: 3rem;
-      margin-left: -3rem;
+      
     }
     .section-container .row.image {
       width: 25rem;
       height: 19rem;
       margin-top: 4rem;
-      margin-right: 3rem;
+     
       
       
     }
@@ -394,27 +397,29 @@ text-align: center;
    
   @media (max-width:786px){
     .section-container{
-      flex-direction: column;
+     
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
     }
     
     .section-container .columns.image{
     display:block;
     order:1;
     width:18rem;
-    height:20rem;
-    margin-right: 5%;
-    margin-left: 15%;
+    height:12rem;
+   
     }
     .section-container .row.image{
       display:block;
       order:1;
       width:18rem;
       height:20rem;
-      margin-right: 5%;
-      margin-left: 15%;
+      
       }
       .section-container .columns{
-        flex-direction: row-reverse;
+        flex-direction:column-reverse;
       }
       .section-container .row{
         flex-direction: row-reverse;
@@ -443,13 +448,13 @@ text-align: center;
     }
     .card {
       width:100%;
-      margin-right:25%;
+      
     }
     .our-team h1{
       font-size: 1.5rem;
       text-align: center;
       justify-content: center;
-      margin-left: 15%;
+   
     }
     .our-team {
       margin-right: 19%;
