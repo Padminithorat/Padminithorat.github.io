@@ -36,6 +36,7 @@ body {
 }
 .map{
   grid-area: map;
+  padding: 0px;
 }
 .form{
   grid-area: form;
@@ -310,7 +311,7 @@ flex-direction: column;
     display: inherit;
   } 
   .info{
-    font-size: 12px;
+    font-size: 50%;
   }
  
   .info .form{
