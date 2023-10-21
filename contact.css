@@ -141,7 +141,7 @@ transition: .3s;
 }
 .info{
   background-color: #4584b5;
-  background-image: url(Images\contact_info.jpg);
+  background-image: url(./Images/contact_info.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   /* border-radius: 10%; */
