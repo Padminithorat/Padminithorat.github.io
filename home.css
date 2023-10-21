@@ -27,17 +27,17 @@ header {
 }
 
 header .heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-left: 8rem;
-    color: #ffff;
-    font-size: 2.5rem;
-    font-family: 'Inika', serif;
-
 }
 
-header .heading a {
-    text-decoration: none;
-    color: black;
+header a img {
+    width: 10rem;
+    /* height: 5rem; */
 }
+
 
 header #menu-icon {
     display: none;
@@ -46,6 +46,7 @@ header #menu-icon {
 header .navbar {
     margin: 4rem;
     transform: translateX(0%);
+    opacity: 1;
 }
 
 header .navbar a {
@@ -60,6 +61,7 @@ header .navbar a {
     font-weight: 500;
     margin: 0px 10px;
     padding: 10px 10px;
+
 }
 
 
@@ -166,10 +168,9 @@ header .navbar a:hover:before {
     justify-content: center;
     align-items: center;
     height: 40vh;
-    /* width: 100%; */
     word-wrap: break-word;
     margin: 0rem 0rem 5rem 0rem;
-    background: fixed url(https://rare-gallery.com/uploads/posts/380093-4k-wallpaper.jpg);
+    background: fixed url(assets/Welcome\ bg\ \(1\).jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -190,8 +191,6 @@ header .navbar a:hover:before {
     margin-bottom: 1rem;
     margin-top: 1rem;
     color: #FFF;
-    /* opacity: 0; */
-    /* animation: fade-in 1s ease forwards; */
 }
 
 
@@ -200,41 +199,37 @@ header .navbar a:hover:before {
     font-size: 2rem;
     font-weight: 100;
     color: #ffff;
-    /* color: black; */
     text-align: center;
     font-family: 'Marcellus', serif;
     word-wrap: break-word;
-    /* opacity: 0; */
-    /* animation: fade-in 1s ease forwards; */
+
 }
 
+.welcome .welcomeig .txt a{
+    text-decoration: none;
+    font-size: 1.3rem;
+}
 
-.welcome .txt a button {
-    display: flex;
-    align-items: center;
-    width: 10rem;
+.welcome .welcomeig .txt a button {
     background-color: #ffffff;
     color: black;
-    padding: 0.5rem;
+    padding: 0.5rem 0.7rem;
     border: none;
-    border-radius: 10px;
+    border-radius: 25px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
 }
 
-.welcome .txt a {
-    text-decoration: none;
-}
-
-.welcome .txt a button:hover {
+.welcome .welcomeig .txt a  button:hover {
     background: rgba(30, 30, 30, 0.92);
     color: #ffff;
+    transform: scale(1.05); /* Scale up the button on hover */
 }
 
-.welcome .txt a button i {
-    margin-left: 5px;
-    font-size: 1rem;
-}
+
+
 
 .scroll-fade {
     opacity: 0;
@@ -256,8 +251,7 @@ header .navbar a:hover:before {
     background-repeat: no-repeat;
     background-size: cover;
     color: #202020;
-    padding-top: 115px;
-    /* padding-bottom: 30px; */
+    padding-top: 100px;
     margin-bottom: 5rem;
 }
 
@@ -422,29 +416,38 @@ header .navbar a:hover:before {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2rem 0rem;
+    text-align: center;
+    padding: 1rem 0rem;
     margin: 2rem 0rem;
 }
 
-.section-services .container .ser-link .learn-more {
-    display: flex;
-    text-decoration: none;
+.section-services .container .ser-link .learn-more button {
+    background-color: #ffffff;
     color: black;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 25px;
     cursor: pointer;
-    transition: 0.2s ease-in-out;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    margin-bottom:1rem ;
 }
 
-.section-services .container .ser-link .learn-more:hover {
-    transform: scale(1.2);
+.section-services .container .ser-link .learn-more {
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: #000;
+}
+
+.section-services .container .ser-link .learn-more button:hover {
+    background: rgba(30, 30, 30, 0.92);
+    color: #ffff;
+    transform: scale(1.05); 
 }
 
 
-
-footer {
+footer .first {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -463,6 +466,10 @@ footer {
 footer .copyright {
     display: flex;
     /* justify-content: flex-start; */
+}
+
+footer .copyright img{
+    width: 15rem;
 }
 
 footer .links {
@@ -538,11 +545,20 @@ footer .links .social-media a:hover {
     transform: scale(0.9);
     transition: opacity 0.5s, transform 0.5s;
 }
+
 .footer-animate.animated2 {
     opacity: 1;
     transform: scale(1);
 }
 
+footer .second{
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.5rem;
+}
 
 
 @keyframes pulse {
@@ -648,13 +664,13 @@ footer .links .social-media a:hover {
         max-width: fit-content;
     }
 
-    footer {
+    footer .first {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         height: 50vh;
-        gap: 10vh;
+        gap: 1vw;
         font-size: 1.4rem;
     }
 }
@@ -711,7 +727,7 @@ footer .links .social-media a:hover {
         font-size: 2.5rem;
     }
 
-    footer {
+    footer .first {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1521,14 +1537,14 @@ footer .links .social-media a:hover {
     font-size: 2.8rem;
 }
 
-.content .container{
+.content .container {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 50rem;
 }
 
-.review-head{
+.review-head {
     font-size: 3rem;
 }
 
@@ -1575,16 +1591,15 @@ footer .links .social-media a:hover {
 
 @keyframes fadeIn {
     from {
-        opacity: 0; 
+        opacity: 0;
     }
+
     to {
-        opacity: 1; 
+        opacity: 1;
     }
 }
 
 .success-message img {
-    width: 2rem; 
+    width: 2rem;
     mix-blend-mode: multiply;
 }
-
-
