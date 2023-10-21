@@ -2,18 +2,20 @@
 {
 padding:0;
 margin:0;
+
 scroll-behavior: smooth;
-overflow-x: hidden;
-overflow-y: auto;
 }
 body{
+  overflow-x: hidden;
   background-image: linear-gradient(to right,#58bbe9,white );
 }
+
+
 /* ABOUT US , FOUNDER , CO FOUNDER*/
 .section-container
 {
-/*--bs-gutter-x: 1.5rem;
---bs-gutter-y: 0;*/
+--bs-gutter-x: 1.5rem;
+--bs-gutter-y: 0;
 display: flex;
 flex-direction: row;
 
@@ -38,10 +40,10 @@ width:50%;
   overflow: hidden;
   width: 34em;
   height: 24em;
-  margin-top: 5em;
+  margin-top: 7em;
   margin-left: 5em;
   margin-right: 2em;
-
+  border-radius: 15px 50px;
 
 }
 
@@ -56,7 +58,7 @@ width:50%;
   margin-top: 5em;
   margin-left: 2em;
   margin-right: 8em;
-
+  border-radius: 15px 50px;
 }
 
 
@@ -238,6 +240,7 @@ text-align: center;
     text-align: center;
     height: 100%;
     width: 100%;
+    margin-left: 2.25%;
     
   }  
   
@@ -250,7 +253,7 @@ text-align: center;
   top: 50%;
   width: auto;
   margin-top: -30px;
-  margin-right: 61px;
+  margin-right: 76px;
   
   color: #888;
   font-weight: bold;
@@ -327,7 +330,7 @@ text-align: center;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    overflow: hidden;
+  
     
   }
   
@@ -356,6 +359,9 @@ text-align: center;
   
 
   @media (max-width:1280px){
+    *{
+      overflow-x: hidden;
+    }
     .section-container .columns.content .content-container
     {
     padding:45px 1px;
@@ -373,6 +379,7 @@ text-align: center;
       height: 19rem;
       margin-top: 4rem;
       margin-right: 3rem;
+      
       
     }
     .section-container .columns.content .content-container p{
