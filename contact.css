@@ -141,7 +141,7 @@ transition: .3s;
 }
 .info{
   background-color: #4584b5;
-  background-image: url(https://plus.unsplash.com/premium_photo-1666345068000-f11cb42d964f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c291cmNlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60);
+  background-image: url(Images\contact_info.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   /* border-radius: 10%; */
@@ -311,10 +311,9 @@ flex-direction: column;
     display: inherit;
   } 
   .info{
-    background-image: url(https://plus.unsplash.com/premium_photo-1666345068000-f11cb42d964f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c291cmNlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60);
-    background-size: cover;
-    background-repeat: no-repeat;
+    font-size: 12px;
   }
+ 
   .info .form{
     margin-bottom: 5%;
     margin-top: 5%;
@@ -335,7 +334,6 @@ flex-direction: column;
 .contact {
   padding: 40px;
   margin-bottom: 5%;
-  background: #fff;
   box-shadow: 0 5px 35px rgba(0,0,0,0.15);
 }
 
