@@ -43,7 +43,7 @@
 
 
 <header>
-  <h2 class="heading"><a style="font-size: 2rem;" href="#home.html">JMD</a></h2>
+ <a class="heading" href="home.html"><img src="/JMD Construction Website/Home/assets/LOGO_JMD-removebg-preview.png" alt=""></a>
 
   <i class='bx bx-menu-alt-right' id="menu-icon"></i>
   <nav class="navbar">
@@ -436,107 +436,118 @@
 
 
 <style>
-  footer {
+ footer .first {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 35vh;
     border-radius: 2rem 2rem 0 0;
+    /* background: rgba(30, 30, 30, 0.92); */
     background-color: black;
     color: #ffffff;
     gap: 30vw;
     font-size: 1.7rem;
     font-family: 'Inika', serif;
-  }
+    animation: slideInFromBottom 1s;
+    animation: fadeIn 1s;
+}
 
-  footer .copyright {
+footer .copyright {
     display: flex;
-  }
+    /* justify-content: flex-start; */
+}
 
-  footer .links {
+footer .copyright img{
+    width: 15rem;
+}
+
+footer .links {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 10rem;
-  }
+}
 
-  footer .links .nav-bar {
+footer .links .nav-bar {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     line-height: 2rem;
-  }
+}
 
-  footer .links .nav-bar a {
+footer .links .nav-bar a {
     color: #FFF;
     text-decoration: none;
     font-size: 1.3rem;
-  }
+}
 
-  footer .links .nav-bar a:hover {
+footer .links .nav-bar a:hover {
     animation: pulse 0.5s;
     color: rgb(86, 177, 187);
-  }
+}
 
-  footer .links .another-link {
+footer .links .another-link {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     line-height: 2rem;
-  }
+}
 
-  footer .links .another-link a {
+footer .links .another-link a {
     color: #FFF;
     text-decoration: none;
     font-size: 1.3rem;
-  }
+}
 
-  footer .links .another-link a:hover {
+footer .links .another-link a:hover {
     animation: pulse 0.5s;
     color: rgb(86, 177, 187);
-  }
+}
 
-  footer .links .social-media {
+footer .links .social-media {
     line-height: 2rem;
-  }
+}
 
-  footer .links .social-media h5,
-  a {
+footer .links .social-media h5,
+a {
     font-size: 1.5rem;
-  }
+}
 
-  footer .links .social-media {
+footer .links .social-media {
     display: flex;
     flex-direction: column;
-  }
+}
 
-  footer .links .social-media a {
+footer .links .social-media a {
     display: inline-block;
     font-size: 2rem;
     color: white;
+}
 
-  }
-
-  footer .links .social-media a:hover {
+footer .links .social-media a:hover {
     animation: pulse 0.5s;
     color: rgb(86, 177, 187);
-  }
+}
 
-  .nav-bar a {
-    font-family: 'Inika', serif !important;
+.footer-animate {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.5s, transform 0.5s;
+}
 
-  }
+.footer-animate.animated2 {
+    opacity: 1;
+    transform: scale(1);
+}
 
-  .social-media h5 {
-    font-family: 'Inika', serif !important;
-    font-weight: 600;
-    color: white;
-  }
-
-  .so-icon a {
-    color: white !important;
-
-  }
+footer .second{
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.5rem;
+}
 
   @keyframes pulse {
 
@@ -551,25 +562,25 @@
   }
 
   @media (max-width:1280px) {
-    footer {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 50vh;
-      gap: 10vh;
-      font-size: 1.4rem;
+     footer .first {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+        gap: 1vw;
+        font-size: 1.4rem;
     }
   }
 
   @media (max-width:786px) {
-    footer {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 80vh;
-      font-size: 1.3rem;
+   footer .first {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+        font-size: 1.3rem;
     }
 
     footer .links {
@@ -606,35 +617,44 @@
   }
 </style>
 
-<footer>
-  <div class="copyright">
-    <p style="color:#FFF !important ;font-family: 'Inika', serif !important">&copy; 2023 JMD GROUPS.</p>
-  </div>
+<footer id="myFooter" class="footer ">
+		<div class="first">
+			<div class="copyright">
+				<img class="footer-animate" src="assets/LOGO_JMD-removebg-preview.png" alt="">
+				
+			</div>
+	
+			<div class="links footer-animate ">
+				<div class="nav-bar">
+					<a class="footer-animate" href="home.html">Home</a>
+					<a class="footer-animate" href="#our-work">Our Work</a>
+					<a class="footer-animate" href="#services">Services</a>
+					<a class="footer-animate" href="/JMD Construction Website/Aboutus/aboutus.html">About Us</a>
+					<a class=".footer-animate" href="/JMD Construction Website/JMD Groups/JMD Groups/contact.html">Contact
+						Us</a>
+				</div>
+	
+				<div class="another-link footer-animate">
+					<a class="footer-animate" href="">Terms of Service</a>
+					<a class="footer-animate" href="">Privacy Policy</a>
+				</div>
+	
+				<div class="social-media footer-animate">
+					<h5 class="footer-animate">Follow Us</h5>
+					<div class="so-icon">
+						<a class="footer-animate" href=""><i class='bx bxl-instagram'></i></a>
+						<a class="footer-animate" href=""><i class='bx bxl-facebook'></i></a>
+						<a class="footer-animate" href=""><i class='bx bxl-youtube'></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
 
-  <div class="links">
-    <div class="nav-bar">
-      <a href="index.html">Home</a>
-      <a href="OurWork.html">Our Work</a>
-      <a href="services.html">Services</a>
-      <a href="aboutus.html">About Us</a>
-      <a href="contact.html">Contact Us</a>
-    </div>
-
-    <div class="another-link">
-      <a style="font-family: 'Inika', serif !important;" href="">Terms of Service</a>
-      <a style="font-family: 'Inika', serif !important; " href="">Privacy Policy</a>
-    </div>
-
-    <div class="social-media">
-      <h5>Follow Us</h5>
-      <div class="so-icon">
-        <a href=""><i style="color:#FFF !important" class='bx bxl-instagram'></i></a>
-        <a href=""><i style="color:#FFF !important" class='bx bxl-facebook'></i></a>
-        <a href=""><i style="color:#FFF !important" class='bx bxl-youtube'></i></a>
-      </div>
-    </div>
-  </div>
-</footer>
+		<div class="second">
+			<p>&copy; 2023 JMD GROUPS.</p>
+		</div>
+		
+	</footer>
 
 
 </body>
