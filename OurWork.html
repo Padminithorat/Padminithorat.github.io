@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./OurWork.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Raleway&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OurWork</title>
+</head>
+
+
+<header>
+  <h2 class="heading"><a style="font-size: 2rem;" href="#home.html">JMD</a></h2>
+
+  <i class='bx bx-menu-alt-right' id="menu-icon"></i>
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="OurWork.html">Our Work</a>
+    <a href="services.html">Services</a>
+    <a href="aboutus.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+
+</header>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+
+  }
+
+  nav.navbar {
+    box-shadow: none;
+  }
+
+  body {
+    overflow-x: hidden;
+
+  }
+
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+  }
+
+  header .heading {
+    margin-left: 8rem;
+    color: #ffff;
+    font-size: 2.5rem;
+    font-family: 'Inika', serif;
+
+  }
+
+  header .heading a {
+    text-decoration: none;
+    color: black;
+  }
+
+  header #menu-icon {
+    display: none;
+  }
+
+  header .navbar {
+    margin: 4rem;
+    transform: translateX(0%);
+  }
+
+  header .navbar a {
+    position: relative;
+    color: black;
+    list-style-type: none;
+    text-decoration: none;
+    /* padding-right: 2.2rem; */
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: 'Inika', serif;
+    font-weight: 500;
+    margin: 0px 10px;
+    padding: 10px 10px;
+  }
+
+  /* Pull down  */
+  header .navbar a:before {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0px;
+    top: 0px;
+    content: '';
+    background: rgb(119, 119, 214);
+    opacity: 0;
+    transition: all 0.3s;
+  }
+
+  header .navbar a:hover:before {
+    opacity: 0.3;
+    height: 100%;
+  }
+
+  @media (max-width:1280px) {
+
+
+    header .heading {
+      margin-left: 2rem;
+    }
+
+    nav.navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    header #menu-icon {
+      display: block;
+      color: black;
+      font-size: 1.9rem;
+      float: right;
+      padding-right: 1.2rem;
+    }
+
+    header .navbar {
+      position: absolute;
+      top: 0.35rem;
+      left: -8rem;
+      width: 100%;
+      padding: 1rem 0rem 0rem 0rem;
+      margin: 4rem 0rem 0rem 8rem;
+      background: rgba(197, 226, 225, 0.92);
+      /* display: none; */
+      transform: translateX(-100%);
+      transition: 0.5s ease;
+      z-index: 100;
+    }
+
+    header .navbar .active {
+      transform: translateX(0%);
+    }
+
+    header nav a {
+      display: block;
+      font-size: 1.2rem;
+      margin: 1rem 5%;
+    }
+
+    /* Pull down  */
+    header .navbar a:before {
+      display: none;
+    }
+
+    header .navbar a:hover:before {
+      display: none;
+    }
+  }
+
+  @media (max-width:786px) {
+
+
+
+    header nav a {
+      font-size: 1.1rem;
+      margin: 1rem 7%;
+    }
+  }
+
+  @media (max-width:380px) {
+
+    header nav a {
+      margin: 1rem 20%;
+    }
+  }
+</style>
+
+<img_Conatiner>
+  <div class="header_title">
+    <div class="Header_title_container">
+      <h1>Our Work</h1>
+      <p><b>Blueprints to Beauty, We Craft with Duty</b></p>
+    </div>
+  </div>
+  <div class="curosel_wrapper">
+    <div id="carouselDarkVariant" class="carousel slide carousel-fade carousel-dark" data-mdb-ride="carousel">
+      <div class="carousel-indicators">
+        <button data-mdb-target="#carouselDarkVariant" data-mdb-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button data-mdb-target="#carouselDarkVariant" data-mdb-slide-to="1" aria-label="Slide 1"></button>
+        <button data-mdb-target="#carouselDarkVariant" data-mdb-slide-to="2" aria-label="Slide 1"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./Images/top_img.jpg" class="d-block w-100" id="curosel_img" alt="Motorbike Smoke" />
+          <div class="carousel-caption d-none d-md-block">
+
+          </div>
+        </div>
+
+
+        <div class="carousel-item">
+          <img src="./Images/update1.jpg" class="d-block w-100" id="curosel_img" alt="Mountaintop" />
+          <div class="carousel-caption d-none d-md-block">
+
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./Images/3.avif" class="d-block w-100" id="curosel_img" alt="Woman Reading a Book" />
+          <div class="carousel-caption d-none d-md-block">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</img_Conatiner>
+
+<MiddleSection>
+  <div class="Middle-container">
+    <div class="Middle-text">
+
+      <h3>Dedicated Excellence in <span>Every Detail</span></h3>
+      <p>Established in 1989, JMD Group has become a trusted and prominent real estate company in India. With more than
+        four decades of experience and a successful track record of developing three million square feet of commercial
+        and residential space, the Group has left an undeniable mark in the real estate industry.
+
+        JMD Group is committed to providing excellence in all asset categories, from designing innovative structures to
+        delivering top-notch customer service at every point of contact.
+        The Group has gratified both families and corporates alike with its landmarks of excellence, making it a go-to
+        developer for those seeking quality and reliability.
+      </p>
+    </div>
+  </div>
+
+</MiddleSection>
+
+
+<cardContainer>
+
+  <div class="card_box_title">
+    <h1>Our Excellency</h1>
+  </div>
+  <div class="Main_container">
+    <div class="container">
+
+
+
+      <div class="card">
+        <div class="face face1">
+          <div class="content">
+            <img src="./Images/card1.jpg">
+
+          </div>
+        </div>
+        <div class="face face2">
+          <div class="content">
+            <h3>Structural Engineering</h3>
+            <p>In construction, structural engineers are vital for designing and ensuring the stability of buildings,
+              bridges, and structures. They calculate loads and materials to ensure safety.</p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="face face1">
+          <div class="content">
+            <img src="./Images/card2.jpg">
+
+          </div>
+        </div>
+        <div class="face face2">
+          <div class="content">
+            <h3>Architectural Design</h3>
+            <p>Architects bring artistic and functional vision to construction projects. They design aesthetically
+              pleasing and practical structures that align with clients</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="card">
+        <div class="face face1">
+          <div class="content">
+            <img src="./Images//card3.jpg">
+
+         </div>
+        </div>
+        <div class="face face2">
+          <div class="content">
+            <h3>Project Management</h3>
+            <p>Effective project management is the backbone of construction. Project managers oversee budgets,
+              schedules, and resources to ensure projects are completed </p>
+
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="face face1">
+          <div class="content">
+            <img src="./Images//card4.jpg">
+          </div>
+        </div>
+        <div class="face face2">
+          <div class="content">
+            <h3>Skilled Labor Force</h3>
+            <p>Skilled tradespeople, including carpenters, electricians, plumbers, and masons, provide the hands-on
+              expertise needed for construction. They work on project</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</cardContainer>
+
+<img_Galary>
+
+  <section class="portfolio-section" id="portfolio">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12 text-center" id="title-Text">
+          <h2> OurProject </h2>
+
+        </div>
+      </div>
+      <div class="portfolio-menu mt-2 mb-4">
+        <nav class="controls" id="buttons-container">
+          <button type="button" class="control outline   btn btn-primary" id="buttons1" data-filter="all">All</button>
+          <button type="button" class="control outline  btn btn-primary" id="buttons2" data-filter=".web">Homes</button>
+          <button type="button" class="control outline   btn btn-primary" id="buttons3"
+            data-filter=".dev">Offices</button>
+          <button type="button" class="control outline   btn btn-primary" id="buttons4"
+            data-filter=".wp">others</button>
+        </nav>
+      </div>
+
+      <ul class="row portfolio-item">
+        <li class="mix dev col-xl-3 col-md-4 col-12 col-sm-6 pd">
+          <img src="./Images/office2.avif" id="galary_img" itemprop="thumbnail" alt="Image description" />
+
+        </li>
+        <li class="mix web col-xl-3 col-md-4 col-12 col-sm-6 pd">
+          <img src="./Images/Home2.avif" id="galary_img" itemprop="thumbnail" alt="Image description" />
+
+        </li>
+        <li class="mix wp col-xl-3 col-md-4 col-12 col-sm-6 pd">
+          <img src="./Images/others3.jpeg" id="galary_img" itemprop="thumbnail" alt="Image description" />
+
+        </li>
+        <li class="mix dev col-xl-3 col-md-4 col-12 col-sm-6 pd ">
+          <img src="./Images/office1.avif" id="galary_img" itemprop="thumbnail" alt="Image description"
+            style="width:340px" />
+
+        </li>
+        <li class="mix web col-xl-3 col-md-4 col-12 col-sm-6 pd ">
+          <img src="./Images/Home3.avif" id="galary_img" itemprop="thumbnail" alt="Image description" />
+
+        </li>
+        <li class="mix wp col-xl-3 col-md-4 col-12 col-sm-6 pd ">
+          <img src="./Images//others4.jpeg" id="galary_img" itemprop="thumbnail" alt="Image description" />
+
+        </li>
+        <li class="mix dev col-xl-3 col-md-4 col-12 col-sm-6 pd">
+          <img src="./Images//office3.avif" id="galary_img" itemprop="thumbnail" alt="Image description" />
+
+        </li>
+        <li class="mix web col-xl-3 col-md-4 col-12 col-sm-6 pd">
+          <img src="./Images/Home1.avif" id="galary_img" itemprop="thumbnail" alt="Image description" />
+
+        </li>
+        <li class="mix wp col-xl-3 col-md-4 col-12 col-sm-6 pd">
+          <img src="./Images//others2.jpeg" id="galary_img2" itemprop="thumbnail" alt="Image description" />
+
+        </li>
+        <li class="mix dev col-xl-3 col-md-4 col-12 col-sm-6 pd">
+          <img src="./Images//office4.avif" id="galary_img2" itemprop="thumbnail" alt="Image description" />
+
+        </li>
+        <li class="mix web col-xl-3 col-md-4 col-12 col-sm-6 pd">
+          <img src="./Images/Home4.avif" id="galary_img2" itemprop="thumbnail" alt="Image description" />
+
+        </li>
+        <li class="mix wp col-xl-3 col-md-4 col-12 col-sm-6 pd">
+          <img src="./Images//others1.jpg" id="galary_img1" itemprop="thumbnail" alt="Image description" />
+
+        </li>
+      </ul>
+    </div>
+  </section>
+
+
+
+</img_Galary>
+
+
+
+<style>
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+    border-radius: 2rem 2rem 0 0;
+    background-color: black;
+    color: #ffffff;
+    gap: 30vw;
+    font-size: 1.7rem;
+    font-family: 'Inika', serif;
+  }
+
+  footer .copyright {
+    display: flex;
+  }
+
+  footer .links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10rem;
+  }
+
+  footer .links .nav-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 2rem;
+  }
+
+  footer .links .nav-bar a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 1.3rem;
+  }
+
+  footer .links .nav-bar a:hover {
+    animation: pulse 0.5s;
+    color: rgb(86, 177, 187);
+  }
+
+  footer .links .another-link {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 2rem;
+  }
+
+  footer .links .another-link a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 1.3rem;
+  }
+
+  footer .links .another-link a:hover {
+    animation: pulse 0.5s;
+    color: rgb(86, 177, 187);
+  }
+
+  footer .links .social-media {
+    line-height: 2rem;
+  }
+
+  footer .links .social-media h5,
+  a {
+    font-size: 1.5rem;
+  }
+
+  footer .links .social-media {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer .links .social-media a {
+    display: inline-block;
+    font-size: 2rem;
+    color: white;
+
+  }
+
+  footer .links .social-media a:hover {
+    animation: pulse 0.5s;
+    color: rgb(86, 177, 187);
+  }
+
+  .nav-bar a {
+    font-family: 'Inika', serif !important;
+
+  }
+
+  .social-media h5 {
+    font-family: 'Inika', serif !important;
+    font-weight: 600;
+    color: white;
+  }
+
+  .so-icon a {
+    color: white !important;
+
+  }
+
+  @keyframes pulse {
+
+    0%,
+    100% {
+      transform: translate(0);
+    }
+
+    50% {
+      transform: translate(-0.1rem, -0.25rem);
+    }
+  }
+
+  @media (max-width:1280px) {
+    footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 50vh;
+      gap: 10vh;
+      font-size: 1.4rem;
+    }
+  }
+
+  @media (max-width:786px) {
+    footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 80vh;
+      font-size: 1.3rem;
+    }
+
+    footer .links {
+      display: flex;
+      flex-direction: column;
+      float: left;
+      gap: 5vh;
+    }
+
+    footer .links .nav-bar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+    footer .links .another-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    footer .links .social-media {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.2rem;
+    }
+
+    footer .links .social-media a {
+      font-size: 2rem;
+    }
+  }
+</style>
+
+<footer>
+  <div class="copyright">
+    <p style="color:#FFF !important ;font-family: 'Inika', serif !important">&copy; 2023 JMD GROUPS.</p>
+  </div>
+
+  <div class="links">
+    <div class="nav-bar">
+      <a href="#hero">Home</a>
+      <a href="#our-work">Our Work</a>
+      <a href="#services">Services</a>
+      <a href="#about-us">About Us</a>
+      <a href="#contact-us">Contact Us</a>
+    </div>
+
+    <div class="another-link">
+      <a style="font-family: 'Inika', serif !important;" href="">Terms of Service</a>
+      <a style="font-family: 'Inika', serif !important; " href="">Privacy Policy</a>
+    </div>
+
+    <div class="social-media">
+      <h5>Follow Us</h5>
+      <div class="so-icon">
+        <a href=""><i style="color:#FFF !important" class='bx bxl-instagram'></i></a>
+        <a href=""><i style="color:#FFF !important" class='bx bxl-facebook'></i></a>
+        <a href=""><i style="color:#FFF !important" class='bx bxl-youtube'></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+  integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.2.2/mixitup.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js'></script>
+<script>
+
+
+  let menuicon = document.getElementById("menu-icon");
+  let nav = document.querySelector('.navbar');
+
+
+  menuicon.addEventListener("click", () => {
+    menuicon.classList.toggle('bx-x');
+    if (nav.style.transform === "translateX(0%)") {
+      nav.style.transform = "translateX(-100%)";
+    } else {
+      nav.style.transform = "translateX(0%)";
+    }
+  });
+
+
+
+
+
+</script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js'></script>
+<script>
+  var containerEl = document.querySelector(".portfolio-item");
+  var mixer = mixitup(containerEl, {
+    animation: {
+      effects: "fade translateZ(-100px)",
+      effectsIn: "fade translateY(-100%)",
+      easing: "cubic-bezier(0.645, 0.045, 0.355, 1)"
+    }
+  });
+  $("[data-fancybox]").fancybox({
+    loop: true,
+    hash: true,
+    transitionEffect: "slide",
+    clickContent: function (current, event) {
+      return current.type === "image" ? "next" : false;
+    }
+  });
+</script>
+
+</html>
