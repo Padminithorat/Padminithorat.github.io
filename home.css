@@ -732,6 +732,7 @@ footer .second{
         align-items: center;
         height: 80vh;
         font-size: 1.3rem;
+        gap:1.5rem
     }
 
     footer .links {
