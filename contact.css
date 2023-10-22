@@ -333,6 +333,7 @@ flex-direction: column;
 .map{
   margin-top:5%;
   padding: 0px;
+  height: 600px;
 }
 .contact {
   padding: 40px;
