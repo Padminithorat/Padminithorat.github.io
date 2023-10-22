@@ -19,16 +19,14 @@ header {
 
 header .heading {
   margin-left: 8rem;
-  color: #ffff;
-  font-size: 2.5rem;
   font-family: 'Inika', serif;
   
 }
 
-header .heading a {
-  text-decoration: none;
-  color: black;
+header a img {
+    width: 10rem;
 }
+
 
 header #menu-icon {
   display: none;
@@ -691,23 +689,29 @@ a:hover {
 .content {
   height: 70vh;
 }
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 35vh;
-  /* border-radius: 2rem 2rem 0 0; */
-  /* background: rgba(30, 30, 30, 0.92); */
-  background-color: black;
-  color: #ffffff;
-  gap: 30vw;
-  font-size: 1.7rem;
-  font-family: 'Inika', serif;
+footer .first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+    border-radius: 2rem 2rem 0 0;
+    /* background: rgba(30, 30, 30, 0.92); */
+    background-color: black;
+    color: #ffffff;
+    gap: 30vw;
+    font-size: 1.7rem;
+    font-family: 'Inika', serif;
+    animation: slideInFromBottom 1s;
+    animation: fadeIn 1s;
 }
 
 footer .copyright {
   display: flex;
   /* justify-content: flex-start; */
+}
+
+footer .copyright img{
+    width: 15rem;
 }
 
 footer .links {
@@ -779,6 +783,16 @@ footer .links .social-media a:hover {
   color: rgb(86, 177, 187);
 }
 
+footer .second{
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.5rem;
+}
+
+
 @keyframes pulse {
 
   0%,
@@ -792,26 +806,27 @@ footer .links .social-media a:hover {
 }
 
 @media (max-width:1280px) {
-  footer {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 50vh;
-      gap: 10vh;
-      font-size: 1.4rem;
-  }
+footer .first {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+        gap: 1vw;
+        font-size: 1.4rem;
+    }
 }
 
 @media (max-width:786px) {
-  footer {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 80vh;
-      font-size: 1.3rem;
-  }
+  footer .first {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+        font-size: 1.3rem;
+        gap: 1.5rem;
+    }
 
   footer .links {
       display: flex;
