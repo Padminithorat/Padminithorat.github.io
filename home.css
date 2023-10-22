@@ -613,6 +613,7 @@ footer .second{
         /* align-items:left;  */
         /* gap: -5rem; */
         /* justify-content: flex-start; */
+          align-items: flex-start;
         top: 0.35rem;
         left: -8rem;
         width: 100%;
