@@ -378,6 +378,7 @@ header .heading {
   font-family: 'Inika', serif;
 }
 header a img {
+  margin-top: 0.5rem;
     width: 10rem;
     /* height: 5rem; */
 }
