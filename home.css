@@ -23,7 +23,6 @@ header {
     z-index: 100;
     top: 0;
     left: 0;
-    /* background-color: #AED2FF; */
 }
 
 header .heading {
@@ -35,7 +34,6 @@ header .heading {
 
 header a img {
     width: 10rem;
-    /* height: 5rem; */
 }
 
 
