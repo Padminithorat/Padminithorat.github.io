@@ -477,7 +477,7 @@ header {
     z-index: 100;
     top: 0;
     left: 0;
-    /* background-color: #AED2FF; */
+    background-color: #fff;
 }
 
 header .heading {
