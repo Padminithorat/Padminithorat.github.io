@@ -43,38 +43,19 @@
 
 
 <header>
-  <h2 class="heading"><a style="font-size: 2rem;" href="#home.html">JMD</a></h2>
-
-  <i class='bx bx-menu-alt-right' id="menu-icon"></i>
-  <nav class="navbar">
-    <a href="index.html">Home</a>
-    <a href="OurWork.html">Our Work</a>
-    <a href="services.html">Services</a>
-    <a href="aboutus.html">About Us</a>
-    <a href="contact.html">Contact Us</a>
-  </nav>
-
+    <a class="heading"  href="index.html"><img src="assets/JMD LOGO 1.png" alt=""></a>
+    <i class='bx bx-menu-alt-right'  id="menu-icon"></i>
+    <nav class="navbar">
+        <a  href="home.html">Home</a>
+        <a  href="ourwork.html">Our Work</a>
+        <a  href="services.html">Services</a>
+        <a  href="aboutus.html">About Us</a>
+        <a  href="contact.html">Contact Us</a>
+    </nav>
 </header>
 
 <style>
-  * {
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-
-  }
-
-  nav.navbar {
-    box-shadow: none;
-  }
-
-  body {
-    overflow-x: hidden;
-
-  }
-
-
-  header {
+    header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -83,32 +64,30 @@
     z-index: 100;
     top: 0;
     left: 0;
-    background-color: #ffffff;
-  }
+    /* background-color: #AED2FF; */
+}
 
-  header .heading {
+header .heading {
     margin-left: 8rem;
-    color: #ffff;
-    font-size: 2.5rem;
-    font-family: 'Inika', serif;
+}
 
-  }
+header a img {
+    width: 10rem;
+}
 
-  header .heading a {
-    text-decoration: none;
-    color: black;
-  }
 
-  header #menu-icon {
+header #menu-icon {
     display: none;
-  }
+}
 
-  header .navbar {
+header .navbar {
     margin: 4rem;
+    margin-right: 1rem;
     transform: translateX(0%);
-  }
+    opacity: 1;
+}
 
-  header .navbar a {
+header .navbar a {
     position: relative;
     color: black;
     list-style-type: none;
@@ -120,10 +99,12 @@
     font-weight: 500;
     margin: 0px 10px;
     padding: 10px 10px;
-  }
 
-  /* Pull down  */
-  header .navbar a:before {
+}
+
+
+/* Pull down  */
+header .navbar a:before {
     position: absolute;
     width: 100%;
     height: 2px;
@@ -133,83 +114,94 @@
     background: rgb(119, 119, 214);
     opacity: 0;
     transition: all 0.3s;
-  }
+}
 
-  header .navbar a:hover:before {
+header .navbar a:hover:before {
     opacity: 0.3;
     height: 100%;
-  }
+}
 
-  @media (max-width:1280px) {
-
-
+@media (max-width:1040px){
     header .heading {
-      margin-left: 2rem;
+        margin-left: 2rem;
     }
 
-    nav.navbar {
-      flex-direction: column;
-      align-items: flex-start;
+    header .navbar a {
+        font-size: 1.05rem;
     }
+}
 
-    header #menu-icon {
-      display: block;
-      color: black;
-      font-size: 1.9rem;
-      float: right;
-      padding-right: 1.2rem;
-    }
+@media (max-width:1280px) {
 
-    header .navbar {
-      position: absolute;
-      top: 0.35rem;
-      left: -8rem;
-      width: 100%;
-      padding: 1rem 0rem 0rem 0rem;
-      margin: 4rem 0rem 0rem 8rem;
-      background: rgba(197, 226, 225, 0.92);
-      /* display: none; */
-      transform: translateX(-100%);
-      transition: 0.5s ease;
-      z-index: 100;
-    }
+header .heading {
+    margin-left: 1.5rem;
+}
 
-    header .navbar .active {
-      transform: translateX(0%);
-    }
+}
 
-    header nav a {
-      display: block;
-      font-size: 1.2rem;
-      margin: 1rem 5%;
-    }
+@media (max-width:850px){
 
-    /* Pull down  */
-    header .navbar a:before {
-      display: none;
-    }
+header a img{
+    width: 8rem;
+}
 
-    header .navbar a:hover:before {
-      display: none;
-    }
-  }
+header .heading {
+    margin-left: 1rem;
+}
 
-  @media (max-width:786px) {
+header #menu-icon {
+    display: block;
+    color: black;
+    font-size: 1.9rem;
+    float: right;
+    padding-right: 1.2rem;
+}
+
+header .navbar {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* align-items:left;  */
+    /* gap: -5rem; */
+    /* justify-content: flex-start; */
+    top: 0.35rem;
+    left: -8rem;
+    width: 100%;
+    padding: 1rem 0rem 0rem 0rem;
+    margin: 4rem 0rem 0rem 8rem;
+    background: rgba(197, 226, 225, 0.92);
+    /* display: none; */
+    transform: translateX(-100%);
+    transition: 0.5s ease;
+    z-index: 100;
+}
+
+header .navbar .active {
+    transform: translateX(0%);
+}
+
+header nav a {
+    display: block;
+    font-size: 1.2rem;
+    margin: 1rem 5%;
+}
+
+/* Pull down  */
+header .navbar a:before {
+    display: none;
+}
+
+header .navbar a:hover:before {
+    display: none;
+    background-repeat: no-repeat;
+}
+
+}
 
 
 
-    header nav a {
-      font-size: 1.1rem;
-      margin: 1rem 7%;
-    }
-  }
 
-  @media (max-width:380px) {
-
-    header nav a {
-      margin: 1rem 20%;
-    }
-  }
 </style>
 
 <img_Conatiner>
@@ -436,22 +428,29 @@
 
 
 <style>
-  footer {
+footer .first {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 35vh;
     border-radius: 2rem 2rem 0 0;
+    /* background: rgba(30, 30, 30, 0.92); */
     background-color: black;
     color: #ffffff;
     gap: 30vw;
     font-size: 1.7rem;
     font-family: 'Inika', serif;
-  }
+    animation: slideInFromBottom 1s;
+    animation: fadeIn 1s;
+}
 
   footer .copyright {
     display: flex;
   }
+
+  footer .copyright img{
+    width: 15rem;
+}
 
   footer .links {
     display: flex;
@@ -538,6 +537,15 @@
 
   }
 
+  footer .second{
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.5rem;
+}
+  
   @keyframes pulse {
 
     0%,
@@ -551,25 +559,26 @@
   }
 
   @media (max-width:1280px) {
-    footer {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 50vh;
-      gap: 10vh;
-      font-size: 1.4rem;
+     footer .first {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+        gap: 1vw;
+        font-size: 1.4rem;
     }
   }
 
   @media (max-width:786px) {
-    footer {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 80vh;
-      font-size: 1.3rem;
+    footer .first {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+        font-size: 1.3rem;
+        gap: 1.5rem;
     }
 
     footer .links {
@@ -606,34 +615,41 @@
   }
 </style>
 
-<footer>
-  <div class="copyright">
-    <p style="color:#FFF !important ;font-family: 'Inika', serif !important">&copy; 2023 JMD GROUPS.</p>
-  </div>
+<footer id="myFooter" class="footer ">
+    <div class="first">
+        <div class="copyright">
+            <img src="assets/JMD LOGO 2.png" alt="">
+        </div>
 
-  <div class="links">
-    <div class="nav-bar">
-      <a href="#hero">Home</a>
-      <a href="#our-work">Our Work</a>
-      <a href="#services">Services</a>
-      <a href="#about-us">About Us</a>
-      <a href="#contact-us">Contact Us</a>
+        <div class="links">
+            <div class="nav-bar">
+                <a  href="index.html">Home</a>
+                <a  href="ourwork.html">Our Work</a>
+                <a  href="services.html">Services</a>
+                <a  href="aboutus.html">About Us</a>
+                <a  href="contact.html">Contact Us</a>
+            </div>
+
+            <div class="another-link">
+                <a href="">Terms of Service</a>
+                <a href="">Privacy Policy</a>
+            </div>
+
+            <div class="social-media footer-animate">
+                <h5>Follow Us</h5>
+                <div class="so-icon">
+                    <a href=""><i class='bx bxl-instagram'></i></a>
+                    <a href=""><i class='bx bxl-facebook'></i></a>
+                    <a href=""><i class='bx bxl-youtube'></i></a>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="another-link">
-      <a style="font-family: 'Inika', serif !important;" href="">Terms of Service</a>
-      <a style="font-family: 'Inika', serif !important; " href="">Privacy Policy</a>
+    <div class="second">
+        <p>&copy; 2023 JMD GROUPS.</p>
     </div>
 
-    <div class="social-media">
-      <h5>Follow Us</h5>
-      <div class="so-icon">
-        <a href=""><i style="color:#FFF !important" class='bx bxl-instagram'></i></a>
-        <a href=""><i style="color:#FFF !important" class='bx bxl-facebook'></i></a>
-        <a href=""><i style="color:#FFF !important" class='bx bxl-youtube'></i></a>
-      </div>
-    </div>
-  </div>
 </footer>
 
 
