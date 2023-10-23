@@ -23,17 +23,19 @@ header {
     z-index: 100;
     top: 0;
     left: 0;
+    /* background-color: #AED2FF; */
 }
 
 header .heading {
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     margin-left: 8rem;
 }
 
 header a img {
     width: 10rem;
+    /* height: 5rem; */
 }
 
 
@@ -43,6 +45,7 @@ header #menu-icon {
 
 header .navbar {
     margin: 4rem;
+    margin-right: 1rem;
     transform: translateX(0%);
     opacity: 1;
 }
@@ -595,7 +598,92 @@ footer .second{
 
 
     header .heading {
-        margin-left: 2rem;
+        margin-left: 1.5rem;
+    }
+
+    /* header #menu-icon {
+        display: block;
+        color: black;
+        font-size: 1.9rem;
+        float: right;
+        padding-right: 1.2rem;
+    }
+
+    header .navbar {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        top: 0.35rem;
+        left: -8rem;
+        width: 100%;
+        padding: 1rem 0rem 0rem 0rem;
+        margin: 4rem 0rem 0rem 8rem;
+        background: rgba(197, 226, 225, 0.92);
+        transform: translateX(-100%);
+        transition: 0.5s ease;
+        z-index: 100;
+    }
+
+    header .navbar .active {
+        transform: translateX(0%);
+    }
+
+    header nav a {
+        display: block;
+        font-size: 1.2rem;
+        margin: 1rem 5%;
+    } */
+
+
+    .text-overlay .titleb {
+        position: absolute;
+        top: -10rem;
+        /* left: 40rem; */
+        /* color: #ffffff; */
+        font-size: 5rem;
+
+    }
+
+    .welcome {
+        height: 60vh;
+    }
+
+    .welcome .txt h2 {
+        max-width: fit-content;
+    }
+
+    footer .first {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+        gap: 1vw;
+        font-size: 1.4rem;
+    }
+}
+
+
+@media (max-width:1040px){
+    header .heading {
+        margin-left: 1rem;
+    }
+
+    header .navbar a {
+        font-size: 1.05rem;
+    }
+}
+
+
+@media (max-width:850px){
+
+    header a img{
+        width: 8rem;
+    }
+
+    header .heading {
+        margin-left: 1rem;
     }
 
     header #menu-icon {
@@ -610,10 +698,10 @@ footer .second{
         position: absolute;
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
         /* align-items:left;  */
         /* gap: -5rem; */
         /* justify-content: flex-start; */
-          align-items: flex-start;
         top: 0.35rem;
         left: -8rem;
         width: 100%;
@@ -645,43 +733,9 @@ footer .second{
         display: none;
     }
 
-
-    .text-overlay .titleb {
-        position: absolute;
-        top: -10rem;
-        /* left: 40rem; */
-        /* color: #ffffff; */
-        font-size: 5rem;
-
-    }
-
-    .welcome {
-        height: 60vh;
-    }
-
-    .welcome .txt h2 {
-        max-width: fit-content;
-    }
-
-    footer .first {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 50vh;
-        gap: 1vw;
-        font-size: 1.4rem;
-    }
 }
 
 @media (max-width:786px) {
-
-
-
-    header nav a {
-        font-size: 1.1rem;
-        margin: 1rem 7%;
-    }
 
     .hero #construction-video {
         width: 100%;
@@ -733,7 +787,7 @@ footer .second{
         align-items: center;
         height: 80vh;
         font-size: 1.3rem;
-        gap:1.5rem
+        gap: 1.5rem;
     }
 
     footer .links {
@@ -873,10 +927,6 @@ footer .second{
 }
 
 @media (max-width:380px) {
-
-    header nav a {
-        margin: 1rem 20%;
-    }
 
     .welcome {
         height: 78vh;
