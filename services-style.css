@@ -5,22 +5,20 @@
 /* Four Images for each type of service */
 
 
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  height: 70px;
-  z-index: 100;
-  top: 0;
-  left: 0;
-  /* background-color: #AED2FF; */
+    header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    /* background-color: #AED2FF; */
 }
 
 header .heading {
-  margin-left: 8rem;
-  font-family: 'Inika', serif;
-  
+    margin-left: 8rem;
 }
 
 header a img {
@@ -29,120 +27,131 @@ header a img {
 
 
 header #menu-icon {
-  display: none;
+    display: none;
 }
 
 header .navbar {
-  margin: 4rem;
-  transform: translateX(0%);
+    margin: 4rem;
+    margin-right: 1rem;
+    transform: translateX(0%);
+    opacity: 1;
 }
 
 header .navbar a {
-  position: relative;
-  color: black;
-  list-style-type: none;
-  text-decoration: none;
-  /* padding-right: 2.2rem; */
-  text-decoration: none;
-  font-size: 1.2rem;
-  font-family: 'Inika', serif;
-  font-weight: 500;
-  margin: 0px 10px;
-  padding: 10px 10px;
+    position: relative;
+    color: black;
+    list-style-type: none;
+    text-decoration: none;
+    /* padding-right: 2.2rem; */
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: 'Inika', serif;
+    font-weight: 500;
+    margin: 0px 10px;
+    padding: 10px 10px;
+
 }
+
 
 /* Pull down  */
 header .navbar a:before {
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  left: 0px;
-  top: 0px;
-  content: '';
-  background: rgb(119, 119, 214);
-  opacity: 0;
-  transition: all 0.3s;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0px;
+    top: 0px;
+    content: '';
+    background: rgb(119, 119, 214);
+    opacity: 0;
+    transition: all 0.3s;
 }
 
 header .navbar a:hover:before {
-  opacity: 0.3;
-  height: 100%;
+    opacity: 0.3;
+    height: 100%;
+}
+
+@media (max-width:1040px){
+    header .heading {
+        margin-left: 2rem;
+    }
+
+    header .navbar a {
+        font-size: 1.05rem;
+    }
 }
 
 @media (max-width:1280px) {
 
+    header{
+        overflow: hidden;
+    }
 
 header .heading {
-  margin-left: 2rem;
+    margin-left: 1.5rem;
+}
+
+}
+
+@media (max-width:850px){
+
+header a img{
+    width: 8rem;
+}
+
+header .heading {
+    margin-left: 1rem;
 }
 
 header #menu-icon {
-  display: block;
-  color: black;
-  font-size: 1.9rem;
-  float: right;
-  padding-right: 1.2rem;
+    display: block;
+    color: black;
+    font-size: 1.9rem;
+    float: right;
+    padding-right: 1.2rem;
 }
 
 header .navbar {
-  position: absolute;
-  /* display: flex;
-  flex-direction: column;
-  align-items:center; */
-  /* gap: -5rem; */
-  /* justify-content: flex-start; */
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  top: 0.35rem;
-  left: -8rem;
-  width: 100%;
-  padding: 1rem 0rem 0rem 0rem;
-  margin: 4rem 0rem 0rem 8rem;
-  background: rgba(197, 226, 225, 0.92);
-  /* display: none; */
-  transform: translateX(-100%);
-  transition: 0.5s ease;
-  z-index: 100;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* align-items:left;  */
+    /* gap: -5rem; */
+    /* justify-content: flex-start; */
+    top: 0.35rem;
+    left: -8rem;
+    width: 100%;
+    padding: 1rem 0rem 0rem 0rem;
+    margin: 4rem 0rem 0rem 8rem;
+    background: rgba(197, 226, 225, 0.92);
+    /* display: none; */
+    transform: translateX(-100%);
+    transition: 0.5s ease;
+    z-index: 100;
 }
 
 header .navbar .active {
-  transform: translateX(0%);
+    transform: translateX(0%);
 }
 
 header nav a {
-  display: block;
-  font-size: 1.2rem;
-  margin: 1rem 5%;
+    display: block;
+    font-size: 1.2rem;
+    margin: 1rem 5%;
 }
 
 /* Pull down  */
 header .navbar a:before {
- display: none;
+    display: none;
 }
 
 header .navbar a:hover:before {
-display: none;
-}
-}
-
-@media (max-width:786px) {
-
-
-
-header nav a {
-  font-size: 1.1rem;
-  margin: 1rem 7%;
-}
+    display: none;
+    background-repeat: no-repeat;
 }
 
-@media (max-width:380px) {
-
-header nav a {
-  margin: 1rem 20%;
 }
-}
-
 
 .grad {
   position: relative;
