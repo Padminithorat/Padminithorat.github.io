@@ -13,169 +13,165 @@
         <link rel="stylesheet" href="aboutus.css" />
         <title>About Us</title>
      </head>
-     <header>
-       <a class="heading" href="home.html"><img src="assets/LOGO_JMD-removebg-preview.png" alt=""></a>
-    
-        <i class='bx bx-menu-alt-right' id="menu-icon"></i>
-        <nav class="navbar">
-            <a href="index.html">Home</a>
-            <a href="OurWork.html">Our Work</a>
-            <a href="services.html">Services</a>
-            <a href="aboutus.html">About Us</a>
-            <a href="contact.html">Contact Us</a>
-        </nav>
-    
-    </header>
+   <header>
+    <a class="heading"  href="index.html"><img src="assets/JMD LOGO 1.png" alt=""></a>
+    <i class='bx bx-menu-alt-right'  id="menu-icon"></i>
+    <nav class="navbar">
+        <a  href="index.html">Home</a>
+        <a  href="ourwork.html">Our Work</a>
+        <a  href="services.html">Services</a>
+        <a  href="aboutus.html">About Us</a>
+        <a  href="contact.html">Contact Us</a>
+    </nav>
+</header>
     
     <style>
-    
-    * {
-        margin: 0;
-        padding: 0;
-        scroll-behavior: smooth;    
-    }
-    
-    body {
-        overflow-x: hidden;
-      
-    }
-    
     header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-        height: 70px;
-        z-index: 100;
-        top: 0;
-        left: 0;
-        background-color: #ffffff; 
-    }
-    
-    header .heading {
-        margin-left: 8rem;
-        font-family: 'Inika', serif;
-        
-    }
-        header a img {
-	margin-top: 0.5rem;
-    	width: 10rem;
-     }
-    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    /* background-color: #AED2FF; */
+}
 
-    
-    header #menu-icon {
-        display: none;
-    }
-    
-    header .navbar {
-        margin: 4rem;
-        transform: translateX(0%);
-    }
-    
-    header .navbar a {
-        position: relative;
-        color: black;
-        list-style-type: none;
-        text-decoration: none;
-        /* padding-right: 2.2rem; */
-        text-decoration: none;
-        font-size: 1.2rem;
-        font-family: 'Inika', serif;
-        font-weight: 500;
-        margin: 0px 10px;
-        padding: 10px 10px;
-    }
-    
-    /* Pull down  */
-    header .navbar a:before {
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        left: 0px;
-        top: 0px;
-        content: '';
-        background: rgb(119, 119, 214);
-        opacity: 0;
-        transition: all 0.3s;
-    }
-    
-    header .navbar a:hover:before {
-        opacity: 0.3;
-        height: 100%;
-    }
-    
-    @media (max-width:1280px) {
-    
-    
+header .heading {
+    margin-left: 8rem;
+}
+
+header a img {
+    width: 10rem;
+}
+
+
+header #menu-icon {
+    display: none;
+}
+
+header .navbar {
+    margin: 4rem;
+    margin-right: 1rem;
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+header .navbar a {
+    position: relative;
+    color: black;
+    list-style-type: none;
+    text-decoration: none;
+    /* padding-right: 2.2rem; */
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: 'Inika', serif;
+    font-weight: 500;
+    margin: 0px 10px;
+    padding: 10px 10px;
+
+}
+
+
+/* Pull down  */
+header .navbar a:before {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0px;
+    top: 0px;
+    content: '';
+    background: rgb(119, 119, 214);
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+header .navbar a:hover:before {
+    opacity: 0.3;
+    height: 100%;
+}
+
+@media (max-width:1040px){
     header .heading {
         margin-left: 2rem;
     }
-    
-    header #menu-icon {
-        display: block;
-        color: black;
-        font-size: 1.9rem;
-        float: right;
-        padding-right: 1.2rem;
+
+    header .navbar a {
+        font-size: 1.05rem;
     }
-    
-    header .navbar {
-        position: absolute;
-        /* display: flex;
-        flex-direction: column;
-        align-items:center; */
-        /* gap: -5rem; */
-        /* justify-content: flex-start; */
-        top: 0.35rem;
-        left: -8rem;
-        width: 100%;
-        padding: 1rem 0rem 0rem 0rem;
-        margin: 4rem 0rem 0rem 8rem;
-        background: rgba(197, 226, 225, 0.92);
-        /* display: none; */
-        transform: translateX(-100%);
-        transition: 0.5s ease;
-        z-index: 100;
-    }
-    
-    header .navbar .active {
-        transform: translateX(0%);
-    }
-    
-    header nav a {
-        display: block;
-        font-size: 1.2rem;
-        margin: 1rem 5%;
-    }
-    
-    /* Pull down  */
-    header .navbar a:before {
-       display: none;
-    }
-    
-    header .navbar a:hover:before {
-      display: none;
-    }
-    }
-    
-    @media (max-width:786px) {
-    
-    
-    
-    header nav a {
-        font-size: 1.1rem;
-        margin: 1rem 7%;
-    }
-    }
-    
-    @media (max-width:380px) {
-    
-    header nav a {
-        margin: 1rem 20%;
-    }
-    }
-    </style>
+}
+
+@media (max-width:1280px) {
+
+header .heading {
+    margin-left: 1.5rem;
+}
+
+}
+
+@media (max-width:850px){
+
+header a img{
+    width: 8rem;
+}
+
+header .heading {
+    margin-left: 1rem;
+}
+
+header #menu-icon {
+    display: block;
+    color: black;
+    font-size: 1.9rem;
+    float: right;
+    padding-right: 1.2rem;
+}
+
+header .navbar {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* align-items:left;  */
+    /* gap: -5rem; */
+    /* justify-content: flex-start; */
+    top: 0.35rem;
+    left: -8rem;
+    width: 100%;
+    padding: 1rem 0rem 0rem 0rem;
+    margin: 4rem 0rem 0rem 8rem;
+    background: rgba(197, 226, 225, 0.92);
+    /* display: none; */
+    transform: translateX(-100%);
+    transition: 0.5s ease;
+    z-index: 100;
+}
+
+header .navbar .active {
+    transform: translateX(0%);
+}
+
+header nav a {
+    display: block;
+    font-size: 1.2rem;
+    margin: 1rem 5%;
+}
+
+/* Pull down  */
+header .navbar a:before {
+    display: none;
+}
+
+header .navbar a:hover:before {
+    display: none;
+    background-repeat: no-repeat;
+}
+
+}
+
+</style>
+	
 <body>
     <div class="section-container">
         <div class="columns image" style="background-image:url('./TsUK.gif')">
@@ -336,221 +332,234 @@ Beyond his work at JMD, Mr. Bedi is actively involved in various philanthropic i
          
              
         
-                <style>
-                footer .first {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 35vh;
-    border-radius: 2rem 2rem 0 0;
-    /* background: rgba(30, 30, 30, 0.92); */
-    background-color: black;
-    color: #ffffff;
-    gap: 30vw;
-    font-size: 1.7rem;
-    font-family: 'Inika', serif;
-    animation: slideInFromBottom 1s;
-    animation: fadeIn 1s;
-}
-              
-                  footer .copyright {
-                      display: flex;
-                      /* justify-content: flex-start; */
-                  }
-
-                    footer .copyright img{
-    width: 15rem;
-}
-
-                    footer .second{
-    background-color: black;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 0.5rem;
-}
-              
-                  footer .links {
-                      display: flex;
-                      justify-content: space-between;
-                      align-items: center;
-                      gap: 10rem;
-                  }
-              
-                  footer .links .nav-bar {
-                      display: flex;
-                      flex-direction: column;
-                      align-items: flex-start;
-                      line-height: 2rem;
-                  }
-              
-                  footer .links .nav-bar a {
-                      color: #FFF;
-                      text-decoration: none;
-                      font-size: 1.3rem;
-                  }
-              
-                  footer .links .nav-bar a:hover {
-                      animation: pulse 0.5s;
-                      color: rgb(86, 177, 187);
-                  }
-              
-                  footer .links .another-link {
-                      display: flex;
-                      flex-direction: column;
-                      align-items: flex-start;
-                      line-height: 2rem;
-                  }
-              
-                  footer .links .another-link a {
-                      color: #FFF;
-                      text-decoration: none;
-                      font-size: 1.3rem;
-                  }
-              
-                  footer .links .another-link a:hover {
-                      animation: pulse 0.5s;
-                      color: rgb(86, 177, 187);
-                  }
-              
-                  footer .links .social-media {
-                      line-height: 2rem;
-                  }
-              
-                  footer .links .social-media h5,
-                  a {
-                      font-size: 1.5rem;
-                  }
-              
-                  footer .links .social-media {
-                      display: flex;
-                      flex-direction: column;
-                  }
-              
-                  footer .links .social-media a {
-                      display: inline-block;
-                      font-size: 2rem;
-                      color: white;
-              
-                  }
-              
-                  footer .links .social-media a:hover {
-                      animation: pulse 0.5s;
-                      color: rgb(86, 177, 187);
-                  }
-              
-                  @keyframes pulse {
-              
-                      0%,
-                      100% {
-                          transform: translate(0);
-                      }
-              
-                      50% {
-                          transform: translate(-0.1rem, -0.25rem);
-                      }
-                  }
-              
-                  @media (max-width:1280px) {
-                        footer .first {
+         <style>
+    footer .first {
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 50vh;
-        gap: 1vw;
-        font-size: 1.4rem;
+        height: 35vh;
+        border-radius: 2rem 2rem 0 0;
+        /* background: rgba(30, 30, 30, 0.92); */
+        background-color: black;
+        color: #ffffff;
+        gap: 30vw;
+        font-size: 1.7rem;
+        font-family: 'Inika', serif;
+        animation: slideInFromBottom 1s;
+        animation: fadeIn 1s;
     }
-                  }
-              
-                  @media (max-width:786px) {
-                      footer .first {
+    
+      footer .copyright {
+        display: flex;
+      }
+    
+      footer .copyright img{
+        width: 15rem;
+    }
+    
+      footer .links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10rem;
+      }
+    
+      footer .links .nav-bar {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 80vh;
+        align-items: flex-start;
+        line-height: 2rem;
+      }
+    
+      footer .links .nav-bar a {
+        color: #FFF;
+        text-decoration: none;
         font-size: 1.3rem;
-			       gap:1.5rem
+      }
+    
+      footer .links .nav-bar a:hover {
+        animation: pulse 0.5s;
+        color: rgb(86, 177, 187);
+      }
+    
+      footer .links .another-link {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        line-height: 2rem;
+      }
+    
+      footer .links .another-link a {
+        color: #FFF;
+        text-decoration: none;
+        font-size: 1.3rem;
+      }
+    
+      footer .links .another-link a:hover {
+        animation: pulse 0.5s;
+        color: rgb(86, 177, 187);
+      }
+    
+      footer .links .social-media {
+        line-height: 2rem;
+      }
+    
+      footer .links .social-media h5,
+      a {
+        font-size: 1.5rem;
+      }
+    
+      footer .links .social-media {
+        display: flex;
+        flex-direction: column;
+      }
+    
+      footer .links .social-media a {
+        display: inline-block;
+        font-size: 2rem;
+        color: white;
+    
+      }
+    
+      footer .links .social-media a:hover {
+        animation: pulse 0.5s;
+        color: rgb(86, 177, 187);
+      }
+    
+      .nav-bar a {
+        font-family: 'Inika', serif !important;
+    
+      }
+    
+      .social-media h5 {
+        font-family: 'Inika', serif !important;
+        font-weight: 600;
+        color: white;
+      }
+    
+      .so-icon a {
+        color: white !important;
+    
+      }
+    
+      footer .second{
+        background-color: black;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0.5rem;
     }
+      
+      @keyframes pulse {
+    
+        0%,
+        100% {
+          transform: translate(0);
+        }
+    
+        50% {
+          transform: translate(-0.1rem, -0.25rem);
+        }
+      }
+    
+      @media (max-width:1280px) {
+         footer .first {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 50vh;
+            gap: 1vw;
+            font-size: 1.4rem;
+        }
+      }
+    
+      @media (max-width:786px) {
+        footer .first {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            font-size: 1.3rem;
+            gap: 1.5rem;
+        }
+    
+        footer .links {
+          display: flex;
+          flex-direction: column;
+          float: left;
+          gap: 5vh;
+        }
+    
+        footer .links .nav-bar {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+    
+    
+        footer .links .another-link {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+    
+        footer .links .social-media {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 0.2rem;
+        }
+    
+        footer .links .social-media a {
+          font-size: 2rem;
+        }
+      }
+    </style>
               
-                      footer .links {
-                          display: flex;
-                          flex-direction: column;
-                          float: left;
-                          gap: 5vh;
-                      }
-              
-                      footer .links .nav-bar {
-                          display: flex;
-                          justify-content: center;
-                          align-items: center;
-                      }
-              
-              
-                      footer .links .another-link {
-                          display: flex;
-                          align-items: center;
-                          justify-content: center;
-                      }
-              
-                      footer .links .social-media {
-                          display: flex;
-                          flex-direction: column;
-                          align-items: center;
-                          justify-content: center;
-                          gap: 0.2rem;
-                      }
-              
-                      footer .links .social-media a {
-                          font-size: 2rem;
-                      }
-                  }
-              </style>
               
               
               
               
-              
-       <footer id="myFooter" class="footer ">
-		<div class="first">
-			<div class="copyright">
-				<img class="footer-animate" src="assets/LOGO_JMD-removebg-preview.png" alt="">
-				
-			</div>
-	
-			<div class="links footer-animate ">
-				<div class="nav-bar">
-					<a class="footer-animate" href="home.html">Home</a>
-					<a class="footer-animate" href="OurWork.html">Our Work</a>
-					<a class="footer-animate" href="services.html">Services</a>
-					<a class="footer-animate" href="aboutus.html">About Us</a>
-					<a class=".footer-animate" href="contact.html">Contact
-						Us</a>
-				</div>
-	
-				<div class="another-link footer-animate">
-					<a class="footer-animate" href="">Terms of Service</a>
-					<a class="footer-animate" href="">Privacy Policy</a>
-				</div>
-	
-				<div class="social-media footer-animate">
-					<h5 class="footer-animate">Follow Us</h5>
-					<div class="so-icon">
-						<a class="footer-animate" href=""><i class='bx bxl-instagram'></i></a>
-						<a class="footer-animate" href=""><i class='bx bxl-facebook'></i></a>
-						<a class="footer-animate" href=""><i class='bx bxl-youtube'></i></a>
-					</div>
-				</div>
-			</div>
-		</div>
+ <footer id="myFooter" class="footer ">
+    <div class="first">
+        <div class="copyright">
+            <img src="assets/JMD LOGO 2.png" alt="">
+        </div>
 
-		<div class="second">
-			<p>&copy; 2023 JMD GROUPS.</p>
-		</div>
-		
-	</footer>
+        <div class="links">
+            <div class="nav-bar">
+                <a  href="index.html">Home</a>
+                <a  href="ourwork.html">Our Work</a>
+                <a  href="services.html">Services</a>
+                <a  href="aboutus.html">About Us</a>
+                <a  href="contact.html">Contact Us</a>
+            </div>
+
+            <div class="another-link">
+                <a href="">Terms of Service</a>
+                <a href="">Privacy Policy</a>
+            </div>
+
+            <div class="social-media footer-animate">
+                <h5>Follow Us</h5>
+                <div class="so-icon">
+                    <a href=""><i class='bx bxl-instagram'></i></a>
+                    <a href=""><i class='bx bxl-facebook'></i></a>
+                    <a href=""><i class='bx bxl-youtube'></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="second">
+        <p>&copy; 2023 JMD GROUPS.</p>
+    </div>
+
+</footer>
               <script src="./aboutus.js"></script>
 </body>
 </html>
