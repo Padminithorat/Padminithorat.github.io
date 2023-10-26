@@ -238,8 +238,8 @@ font-family: 'Inika', serif;
   /* Slideshow container */
   .slideshow-container {
   position: relative;
-  background-image: linear-gradient(to bottom,#58bbe9,white );
-  
+/*  background-image: linear-gradient(to bottom,#58bbe9,white );
+  */
   margin-top: 5%;
   padding: 10%;
   transition: 7s;
