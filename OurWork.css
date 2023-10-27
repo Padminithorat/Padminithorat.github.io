@@ -1023,12 +1023,12 @@ button#buttons1 {
     padding-left: 15px;
   }
   footer {
-    width: 100%;
+/*     width: 100%; */
     margin-top: 100px;
-    overflow: hidden;
+/*     overflow: hidden; */
     /* border:2px solid green; */
-    background-color: white;
-    height: auto !important;
+/*     background-color: white; */
+/*     height: auto !important; */
   
   }
 
