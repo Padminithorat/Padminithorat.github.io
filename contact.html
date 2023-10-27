@@ -1,202 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
-    <link rel="stylesheet" href="contact.css">
-    <link  href="contact.js">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="contact.css" />
+    <link href="contact.js" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <!-- Add any necessary CSS styles or external CSS files here -->
-</head>
-<body>
-<!-- navbar -->
-<header>
-    <a class="heading"  href="index.html"><img src="assets/JMD LOGO 1.png" alt=""></a>
-    <i class='bx bx-menu-alt-right'  id="menu-icon"></i>
-  <nav class="navbar">
-        <a  href="index.html">Home</a>
-        <a  href="OurWork.html">Our Work</a>
-        <a  href="services.html">Services</a>
-        <a  href="aboutus.html">About Us</a>
-        <a  href="contact.html">Contact Us</a>
-    </nav>
-</header>
+  </head>
+  <body>
+    <!-- navbar -->
 
+    <header>
+      <a class="heading"  href="index.html"><img src="assets/JMD LOGO 1.png" alt=""></a>
+      <i class='bx bx-menu-alt-right'  id="menu-icon"></i>
+      <nav class="navbar">
+          <a  href="index.html">Home</a>
+          <a  href="ourwork.html">Our Work</a>
+          <a  href="services.html">Services</a>
+          <a  href="aboutus.html">About Us</a>
+          <a  href="contact.html">Contact Us</a>
+      </nav>
+  </header>
 
-
-<div class="contactUs">
-   <div class="title">
-      <h3>Contact Us</h3>
-   </div>
-   <div class="box">
-      <div class="contact form">
-         <h4>Send Message</h4>
-         <form>
-            <div class="formBox">
-               <div class="row50"> 
-                  <div class="inputBox"> 
-                     <span>First Name</span>
-                     <input type="text" placeholder="First Name"/> 
-                  </div>
-                  <div class="inputBox"> 
-                     <span>Last Name</span>
-                     <input type="text" placeholder="Last Name"/> 
-                  </div>
-               </div>
-               <div class="row50"> 
-                  <div class="inputBox"> 
-                     <span>Email</span>
-                     <input type="text" placeholder="Email"/> 
-                  </div>
-                  <div class="inputBox"> 
-                     <span>Mobile</span>
-                     <input type="text" placeholder="Mobile"/> 
-                  </div>
-               </div>
-               <div class="row100"> 
-                  <div class="inputBox"> 
-                     <span>Message</span>
-                     <textarea placeholder="Write your message" id="message"></textarea> 
-                  </div>
-                  
-               </div>
-               <div class="row100"> 
-                  <div class="inputBox"> 
-                     <input type="submit" value="Send">
-                  </div>
-                  
-               </div>
-            </div>
-         </form>
+    <div class="contactUs">
+      <div class="title">
+        <h3>Contact Us</h3>
       </div>
-      <!-- infobox -->
-      <div class="contact info" style="background-color: #4584b5; background-image: url(./Images/contact_info.jpg);">
-         <h3>Contact Information</h3>
-         <div class="infoBox">
-            <div> 
-               <span><ion-icon name="location"></ion-icon></span>
-               <p>128,1st Floor ILD Trade Centre Sohna Road, 
-                  Gurgaon- 122018,<br>India</p>
+      <div class="box">
+        <div class="contact form">
+          <h4>Send Message</h4>
+          <form action="message.php" method="POST">
+            <div class="formBox">
+              <div class="row50">
+                <div class="inputBox">
+                  <span>First Name</span>
+                  <input type="text" name="first-name" placeholder="First Name" />
+                </div>
+                <div class="inputBox">
+                  <span>Last Name</span>
+                  <input type="text" name="last-name" placeholder="Last Name" />
+                </div>
+              </div>
+              <div class="row50">
+                <div class="inputBox">
+                  <span>Email</span>
+                  <input type="text" name="email" placeholder="Email" />
+                </div>
+                <div class="inputBox">
+                  <span>Mobile</span>
+                  <input type="text" name="mobile" placeholder="Mobile" />
+                </div>
+              </div>
+              <div class="row100">
+                <div class="inputBox">
+                  <span>Message</span>
+                  <textarea
+                    name="message"
+                    placeholder="Write your message"
+                    id="message"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="row100">
+                <div class="inputBox">
+                  <input type="submit" value="Send" />
+                  <span></span>
+                </div>
+              </div>
             </div>
-            <div> 
-               <span><ion-icon name="mail"></ion-icon></span>
-               <a href="#">loremipsum@email.com</a>
+          </form>
+        </div>
+        <!-- infobox -->
+        <div
+          class="contact info"
+          style="
+            background-color: #4584b5;
+            background-image: url(./Images/contact_info.jpg);
+          "
+        >
+          <h3>Contact Information</h3>
+          <div class="infoBox">
+            <div>
+              <span><ion-icon name="location"></ion-icon></span>
+              <p>
+                128,1st Floor ILD Trade Centre Sohna Road, Gurgaon- 122018,<br />India
+              </p>
             </div>
-            <div> 
-               <span><ion-icon name="call"></ion-icon></span>
-               <a href="#">+91-124-4058121</a>
-               <!-- <a href="#">+91 9810257121</a> -->
+            <div>
+              <span><ion-icon name="mail"></ion-icon></span>
+              <a href="#">loremipsum@email.com</a>
+            </div>
+            <div>
+              <span><ion-icon name="call"></ion-icon></span>
+              <a href="#">+91-124-4058121</a>
+              <!-- <a href="#">+91 9810257121</a> -->
             </div>
             <ul class="sci">
-               <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
-               <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
-               <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-               <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
-
+              <li>
+                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+              </li>
+              <li>
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+              </li>
+              <li>
+                <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+              </li>
+              <li>
+                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+              </li>
             </ul>
-         </div>
-      </div>
-      <!-- map -->
-      <div class="contact map" style="padding: 0px;">
-         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d28055.63463955155!2d77.084882!3d28.480922!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d19f2593d5e1f%3A0x43d60d194c0f0821!2sMega%20Mall%20Gurgaon!5e0!3m2!1sen!2sin!4v1696238759199!5m2!1sen!2sin"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-
-   </div>
-
-</div>
-<div class="branch_section">
-<h3>Visit Our Nearest Branch</h3>
-<div class="branch">
- 
-<div class="container">
-   <div class="card" style="--clr:#009688;">
-      <div class="imgBx">
-         <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8b2ZmaWNlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="">
-      </div>
-      <div class="content">
-         <h2>Meet our people in India</h2>
-         <p>Shop No 2-3MAPSKO Shopping ArcadeSector 82Gurgaon , Haryana
-            +919716114121
-            9716030121</p>
-         <a href="#">Get Direction</a>
-      </div>
-   </div>
-   <div class="card" style="--clr:#db4c14;">
-      <div class="imgBx">
-         <img src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8b2ZmaWNlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="">
-      </div>
-      <div class="content">
-         <h2>Meet our people in India</h2>
-         <p>533 , JMD MegapolisSohna RoadGurgaon - 122018, Haryana</p>
-         <a href="#">Get Direction</a>
-      </div>
-   </div>
-   <div class="card" style="--clr:#49386c;">
-      <div class="imgBx">
-         <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fG9mZmljZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
-      </div>
-      <div class="content">
-         <h2>Meet our people in India</h2>
-         <p>16 GF ,Tower 2DLF Corporate GreenSector 74 AGurgaon , Haryana</p>
-         <a href="#">Get Direction</a>
-      </div>
-   </div>
-</div>
-</div>
-</div>
-
-<footer id="myFooter" class="footer ">
-    <div class="first">
-        <div class="copyright">
-            <img src="assets/JMD LOGO 2.png" alt="">
+          </div>
         </div>
-
-        <div class="links">
-            <div class="nav-bar">
-                <a  href="index.html">Home</a>
-                <a  href="ourwork.html">Our Work</a>
-                <a  href="services.html">Services</a>
-                <a  href="aboutus.html">About Us</a>
-                <a  href="contact.html">Contact Us</a>
-            </div>
-
-            <div class="another-link">
-                <a href="">Terms of Service</a>
-                <a href="">Privacy Policy</a>
-            </div>
-
-            <div class="social-media footer-animate">
-                <h5>Follow Us</h5>
-                <div class="so-icon">
-                    <a href=""><i class='bx bxl-instagram'></i></a>
-                    <a href=""><i class='bx bxl-facebook'></i></a>
-                    <a href=""><i class='bx bxl-youtube'></i></a>
-                </div>
-            </div>
+        <!-- map -->
+        <div class="contact map" style="padding: 0px">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d28055.63463955155!2d77.084882!3d28.480922!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d19f2593d5e1f%3A0x43d60d194c0f0821!2sMega%20Mall%20Gurgaon!5e0!3m2!1sen!2sin!4v1696238759199!5m2!1sen!2sin"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
+      </div>
+    </div>
+    <div class="branch_section">
+      <h3>Visit Our Nearest Branch</h3>
+      <div class="branch">
+        <div class="container">
+          <div class="card" style="--clr: #009688">
+            <div class="imgBx">
+              <img
+                src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8b2ZmaWNlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                alt=""
+              />
+            </div>
+            <div class="content">
+              <h2>Meet our people in India</h2>
+              <p>
+                Shop No 2-3MAPSKO Shopping ArcadeSector 82Gurgaon , Haryana
+                +919716114121 9716030121
+              </p>
+              <a href="#">Get Direction</a>
+            </div>
+          </div>
+          <div class="card" style="--clr: #db4c14">
+            <div class="imgBx">
+              <img
+                src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8b2ZmaWNlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                alt=""
+              />
+            </div>
+            <div class="content">
+              <h2>Meet our people in India</h2>
+              <p>533 , JMD MegapolisSohna RoadGurgaon - 122018, Haryana</p>
+              <a href="#">Get Direction</a>
+            </div>
+          </div>
+          <div class="card" style="--clr: #49386c">
+            <div class="imgBx">
+              <img
+                src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fG9mZmljZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                alt=""
+              />
+            </div>
+            <div class="content">
+              <h2>Meet our people in India</h2>
+              <p>
+                16 GF ,Tower 2DLF Corporate GreenSector 74 AGurgaon , Haryana
+              </p>
+              <a href="#">Get Direction</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="second">
-        <p>&copy; 2023 JMD GROUPS.</p>
-    </div>
+    <footer id="myFooter" class="footer ">
+      <div class="first">
+          <div class="copyright">
+              <img src="assets/JMD LOGO 2.png" alt="">
+          </div>
+  
+          <div class="links">
+              <div class="nav-bar">
+                  <a  href="index.html">Home</a>
+                  <a  href="ourwork.html">Our Work</a>
+                  <a  href="services.html">Services</a>
+                  <a  href="aboutus.html">About Us</a>
+                  <a  href="contact.html">Contact Us</a>
+              </div>
+  
+              <div class="another-link">
+                  <a href="">Terms of Service</a>
+                  <a href="">Privacy Policy</a>
+              </div>
+  
+              <div class="social-media footer-animate">
+                  <h5>Follow Us</h5>
+                  <div class="so-icon">
+                      <a href=""><i class='bx bxl-instagram'></i></a>
+                      <a href=""><i class='bx bxl-facebook'></i></a>
+                      <a href=""><i class='bx bxl-youtube'></i></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  
+      <div class="second">
+          <p>&copy; 2023 JMD GROUPS.</p>
+      </div>
+  
+  </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script>
+      let menuicon = document.getElementById("menu-icon");
+      let nav = document.querySelector(".navbar");
 
-</footer>
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-<script>
-let menuicon = document.getElementById("menu-icon");
-let nav = document.querySelector('.navbar');
-
-menuicon.addEventListener("click", () => {
-    menuicon.classList.toggle('bx-x');
-    if (nav.style.transform === "translateX(0%)") {
-        nav.style.transform = "translateX(-100%)";
-    } else {
-        nav.style.transform = "translateX(0%)";
-    }
-});
-</script>
-</body>
+      menuicon.addEventListener("click", () => {
+        menuicon.classList.toggle("bx-x");
+        if (nav.style.transform === "translateX(0%)") {
+          nav.style.transform = "translateX(-100%)";
+        } else {
+          nav.style.transform = "translateX(0%)";
+        }
+      });
+    </script>
+    <!-- <script src="contact-script.js"></script> -->
+  </body>
 </html>
-
