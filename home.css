@@ -1653,3 +1653,168 @@ footer .second{
     width: 2rem;
     mix-blend-mode: multiply;
 }
+
+
+/* Contact Us */
+
+.contactUs {
+    margin: 3rem;
+    font-family: 'Marcellus', serif;
+    background-image: fixed url(assets/JMD\ LOGO\ 1.png);
+}
+
+.contactUs .title h3 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.contact.form {
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact {
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
+}
+
+.box {
+    position: relative;
+    display: grid;
+    /* grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas: 
+    "form info"
+    "form map";
+    grid-gap: 20px; */
+    margin: 2rem 0rem;
+}
+
+.contact h4 {
+    color: #0e3959;
+    font-weight: 500;
+    font-family: 'Marcellus', serif;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.formBox {
+    position: relative;
+    width: 100%;
+}
+
+.formBox .row50 {
+    display: flex;
+    gap: 20px;
+}
+
+.inputBox {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+.formBox .row50 .inputBox {
+    width: 100%;
+
+}
+
+.inputBox span {
+    color: #0e3959;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.inputBox input {
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #333;
+}
+
+.inputBox textarea {
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #333;
+    resize: none;
+    min-height: 220px;
+    margin-bottom: 10px;
+}
+
+.inputBox input[type="submit"] {
+    background-color: #18b7ff;
+    color: #fff;
+    border: none;
+    font-size: 1.1em;
+    max-width: 120px;
+    cursor: pointer;
+    padding: 14px 0px;
+    font-weight: 500;
+    border-radius: 25px;
+}
+
+.inputBox input[type="submit"]:hover {
+    animation: pulse 1s infinite;
+    transition: .3s;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    70% {
+        transform: scale(.9);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.inputBox ::placeholder {
+    color: #999;
+}
+
+@media screen and (max-width:1280px) {
+
+    /* .branch .content-section{
+  flex-direction: column;
+    }*/
+    .contactUs {
+        padding: 34px 0px;
+    }
+
+    .box {
+        display: inherit;
+    }
+
+    .info .form {
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+
+    .formBox .row50 {
+        display: block;
+        gap: 20px;
+    }
+
+    .inputBox {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .contact {
+        padding: 40px;
+        margin-bottom: 5%;
+        box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
+    }
+
+}
