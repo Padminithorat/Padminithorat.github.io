@@ -137,23 +137,30 @@ li {
   margin-left: -29rem;
   margin-top: 10rem;
 }
+
 .header_title h1 {
-   font-size: 60px;
+  font-size: 60px;
   font-family: "Kaushan Script";
   color: #24211d;
-  text-shadow: 0px 0px 10px rgba(237, 226, 226, 0.5);
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
   font-weight: 600 !important;
-}
 }
 
 .header_title p {
-    font-size: 22px;
+  font-size: 22px;
   font-family: "Kaushan Script" !important;
- color:rgba(255, 255, 255, 0.8) !important;
+ color:rgb(232, 229, 229) !important;
   margin-top: 37px;
   font-weight: 500 !important;
-  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8) !important;
 }
+ .header_title p :hover{
+  color:rgb(235, 233, 167) !important;
+ }
+ .header_title h1:hover{
+   text-shadow: 0px 0px 10px rgb(182, 189, 124) !important;
+
+ }
 
 img_Conatiner {
   display: flex;
