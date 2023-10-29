@@ -483,7 +483,7 @@ animation: animate 5s linear infinite;
     background:white;
     text-align:center;
     width: 70%;
-    height: 20%;
+    height: 30%;
     overflow: hidden;
     left: 0;
     right: 0;
@@ -498,7 +498,7 @@ animation: animate 5s linear infinite;
   
   .card:hover .data {
     width: 80%;
-    height: 80%;
+    height: 90%;
     bottom: 0;
     opacity: 0.9;
     padding:90px 5%;
