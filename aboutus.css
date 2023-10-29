@@ -499,7 +499,7 @@ animation: animate 5s linear infinite;
   
   .card:hover .data {
     width: 80%;
-    height: 90%;
+    height: 100%;
     bottom: 0;
     opacity: 0.9;
     padding:90px 5%;
