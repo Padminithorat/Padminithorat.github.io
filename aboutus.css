@@ -498,7 +498,7 @@ animation: animate 5s linear infinite;
   }
   
   .card:hover .data {
-    width: 80%;
+    width: 90%;
     height: 100%;
     bottom: 0;
     opacity: 0.9;
