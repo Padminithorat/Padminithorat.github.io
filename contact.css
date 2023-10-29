@@ -772,6 +772,7 @@ footer .links .another-link a:hover {
 
 footer .links .social-media {
   line-height: 2rem;
+  align-items: center;
 }
 
 footer .links .social-media h5,
