@@ -15,23 +15,7 @@ body{
 
 
 /* ABOUT US , FOUNDER , CO FOUNDER*/
-.heading{
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    margin: 20px auto;
-    text-transform: uppercase;
-    animation: flip 5s infinite;
-    animation-delay: calc(.2s * var(--i))
-  }
-  @keyframes flip {
-    0%,80% {
-      transform: rotateY(360deg) 
-    }
-  }
+
   .about-content h1{
     font-size: 35px;
     color: #000;
@@ -39,7 +23,7 @@ body{
     position: relative;
     align-items: center;
     text-align: center;
-
+    overflow: hidden;
 
 
   
@@ -68,6 +52,15 @@ body{
     font-size: 32px;
     color: #666;
     margin-bottom: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    animation: flip 5s infinite;
+    animation-delay: calc(.2s * var(--i))
+  }
+  @keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
   }
   .container{
     width: 90%;
@@ -237,7 +230,7 @@ body{
   position: relative;
   align-items: center;
   text-align: center;
-
+  overflow: hidden;
 
 
 
@@ -286,7 +279,7 @@ animation: animate 5s linear infinite;
   align-items: center;
   text-align: center;
   margin-top: 10%;
-
+  overflow: hidden;
 
 
 }
@@ -393,7 +386,7 @@ animation: animate 5s linear infinite;
           padding: 0px;
           font-size: .9rem;
   }
-}/* OUR TEAM CSS */
+}
 
 /* Style all font awesome icons */
 .fa {
@@ -634,8 +627,7 @@ box-shadow: 0px 0px 10px rgb(8, 8, 5,0.2);
  justify-content: center;
  display: flex;
 box-shadow: 0px 0px 10px rgb(8, 8, 5,0.2);
-
-   }
+}
   
   /* The dot/bullet/indicator container */
   .dot-container {
@@ -671,7 +663,7 @@ box-shadow: 0px 0px 10px rgb(8, 8, 5,0.2);
   }
   
   /* Add a blue color to the author */
-  .container p {color: rgb(12, 12, 12);
+  .S-container p {color: rgb(12, 12, 12);
   font-size: 1.2rem;
   text-align: center;
   
@@ -679,14 +671,14 @@ box-shadow: 0px 0px 10px rgb(8, 8, 5,0.2);
   font-family: 'Roboto', sans-serif;
   margin-top: 10%;
   }
-.container p:hover{
+.S-container p:hover{
     color:rgb(70, 71, 71);
    font-weight: 500;
     padding: 20px;
-  }
+}
   
   /* Container holding the image and the text */
-  .container {
+  .S-container {
     position: relative;
     text-align: center;
     color: rgb(12, 12, 12);
@@ -702,7 +694,7 @@ box-shadow: 0px 0px 10px rgb(8, 8, 5,0.2);
     
   }
   
-  .container img{
+  .S-container img{
     border-radius: 5%;
     opacity: 30%;
     box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
@@ -719,7 +711,7 @@ box-shadow: 0px 0px 10px rgb(8, 8, 5,0.2);
       width: 18rem;
       height: 14rem;
     }
-    .container{
+    .S-container{
       flex-direction: column;
       margin-bottom: 0rem;
     }
@@ -752,4 +744,3 @@ box-shadow: 0px 0px 10px rgb(8, 8, 5,0.2);
       margin-right: 19%;
     }
   }
-
