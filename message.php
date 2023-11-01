@@ -40,7 +40,7 @@ try {
     $mail->send();
     // echo "<script type='text/javascript'>alert('Message sent successfully');</script>";
     echo '<script>alert("Message sent successfully");</script>';
-    echo '<script>window.location.href = "contact.html";</script>';
+    echo '<script>window.location.href = "index.html";</script>';
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
